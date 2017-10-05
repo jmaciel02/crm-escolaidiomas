@@ -61,7 +61,7 @@ function login_user(){
 
       if($data)
       {
-        $this->session->set_userdata('user_id',$data['id']);
+        $this->session->set_userdata('user_id',$data['idusario']);
         $this->session->set_userdata('user_email',$data['email']);
         $this->session->set_userdata('user_name',$data['nome']);
         $this->load->view('user_profile.php');
