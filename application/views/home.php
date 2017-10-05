@@ -31,14 +31,17 @@ if(!$user_id){
 
                 <ul class="nav">
                     <li class="active">
-                      <a href="user_profile.php">Usuarios</a>
+                      <a href="<?php echo base_url('user/user_profile');?>" >Usuarios</a>
                     </li>
+
                     <li>
-                      <a href="funcao.php">Listar Alunos</a>
+                      <a href="<?php echo base_url('aluno/listaAlunos');?>">Alunos</a>
                     </li>
+
                     <li>
-                      <a href="funcionario.php">Funcionarios</a>
+                      <a href="<?php echo base_url('aluno/cobranças');?>">Cobranças</a>
                     </li>
+
                     <li>
                       <a href="<?php echo base_url('user/user_logout');?>" >  
                         <button type="button" class="btn-primary">Logout</button>
