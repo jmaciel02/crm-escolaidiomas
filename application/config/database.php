@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'bancoteste',
+	'hostname' => '127.0.0.1:52787',
+	'username' => 'azure',
+	'password' => '6#vWHD_$',
+	'database' => 'localdb',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
