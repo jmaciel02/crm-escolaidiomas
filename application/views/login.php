@@ -57,13 +57,15 @@
                 <center><b>Not registered ?</b> <br></b><a href="<?php echo base_url('user/register_view'); ?>">Register here</a></center><!--for centered text-->
 
                 </div>
+
+                 <span>login:admin@gmail.com</span><br/>
+                  <span>senha:123</span><br/>
             </div>
         </div>
     </div>
   </div>
 
-  <span>login:admin@gmail.com</span><br/>
-  <span>senha:123</span><br/>
+ 
 
   </body>
 </html>
