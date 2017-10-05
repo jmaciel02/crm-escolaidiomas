@@ -22,7 +22,7 @@ public function register_user(){
       'nome'  =>$this->input->post('user_name'),
       'email' =>$this->input->post('user_email'),
       'senha' =>$this->input->post('user_password'),
-      'status'='1';
+      'status'=>"1"
         );
         print_r($user);
 
