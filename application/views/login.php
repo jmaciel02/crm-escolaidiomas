@@ -11,9 +11,10 @@
 
     <div class="container">
 
-    <img src="<?php echo base_url('assets/images/iconeEscola.png'); ?>"  width="150px" height="150px" > 
+
 
     <div class="row">
+         <img src="<?php echo base_url('assets/images/iconeEscola.png'); ?>"  width="150px" height="150px" > 
         <div class="col-md-4 col-md-offset-4">
             <div class="login-panel panel panel-success">
                 <div class="panel-heading">
