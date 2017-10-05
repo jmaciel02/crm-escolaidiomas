@@ -13,6 +13,7 @@ if(!$user_id){
   <head>
     <meta charset="utf-8">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
   </head>
   <body>
 
@@ -30,9 +31,7 @@ if(!$user_id){
                   </a>
 
                 <ul class="nav">
-                    <li >
-                      <a href="<? echo site_url('user/user_profile');?>" >Usuarios</a>
-                    </li>
+                   
 
                     <li class="active">
                       <a href="<?php base_url('aluno/listaAlunos');?>">Alunos</a>
