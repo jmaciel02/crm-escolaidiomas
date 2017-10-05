@@ -13,6 +13,7 @@ if(!$user_id){
   <head>
     <meta charset="utf-8">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
      <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
   </head>
   <body>
@@ -48,9 +49,17 @@ if(!$user_id){
                         <button type="button" class="btn-primary">Logout</button>
                       </a>
                     </li>
+
+                    <ul class="nav hidden-xs" id="sidebar-footer">
+                    <li>
+                      <a href="#"><h3>Gestão 3LM</h3>Sistema de Gestão RH</a>
+                    </li>
+                    
                 </ul>
 
-               
+
+
+                </ul>
 
 
 
