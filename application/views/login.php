@@ -58,9 +58,9 @@
 
                 </div>
 
-                 <span>login:admin@gmail.com</span><br/>
-                  <span>senha:123</span><br/>
             </div>
+            <span>login:admin@gmail.com</span><br/>
+            <span>senha:123</span><br/>
         </div>
     </div>
   </div>
