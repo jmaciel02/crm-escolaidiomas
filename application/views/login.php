@@ -20,8 +20,8 @@
                     <h3 class="panel-title">Login</h3>
                 </div>
                 <?php
-              $success_msg= $this->session->flashdata('success_msg');
-              $error_msg= $this->session->flashdata('error_msg');
+                    $success_msg= $this->session->flashdata('success_msg');
+                    $error_msg= $this->session->flashdata('error_msg');
 
                   if($success_msg){
                     ?>
@@ -60,8 +60,10 @@
             </div>
         </div>
     </div>
-</div>
+  </div>
 
+  <span>login:admin@gmail.com</span><br/>
+  <span>senha:123</span><br/>
 
   </body>
 </html>
