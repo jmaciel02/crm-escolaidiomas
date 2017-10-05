@@ -71,11 +71,11 @@ if(!$user_id){
                     <div class="col-sm-5" id="featured">
                       <div class="page-header text-muted">Usuario: <?php echo $_SESSION['usuarioLogado'];  ?></div>
 
-                        <form class="form-horizontal" action="<?=$destino; ?>" method="post">
+                        <form class="form-horizontal" action="" method="post">
                           <fieldset>
 
                             <!-- Form Name -->
-                            <legend> <?php echo $tituloformulario; ?> </legend>
+                            <legend> Cadastrar Usuario </legend>
 
                               <!-- Text input-->
                                 <div class="control-group">
