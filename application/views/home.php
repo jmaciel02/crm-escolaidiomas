@@ -124,7 +124,7 @@ if(!$user_id){
 
 
                           <!-- footer-->
-                          <div class="row" id="footer">
+                          <div class="" id="footer">
                             <div class="col-sm-6">
 
                             </div>
