@@ -21,7 +21,7 @@ public function register_user(){
       $user=array(
       'nome'=>$this->input->post('user_name'),
       'email'=>$this->input->post('user_email'),
-      'senha'=>md5($this->input->post('user_password'))
+      'senha'=>$this->input->post('user_password')
         );
         print_r($user);
 
