@@ -13,7 +13,7 @@
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
 
-            <img src="<?php echo base_url('assets/images/iconeEscola.png'); ?>"  width="150px" height="150px"> 
+            <img src="<?php echo base_url('assets/images/iconeEscola.png'); ?>"  width="150px" height="150px" style="margin:30%;"> 
 
             <div class="login-panel panel panel-success">
                 <div class="panel-heading">
