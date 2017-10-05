@@ -46,7 +46,7 @@ else{
 
 public function login_view(){
 
-$this->load->view("login.php");
+  $this->load->view("login.php");
 
 }
 
@@ -68,7 +68,7 @@ function login_user(){
         $this->session->set_userdata('user_name',$data['nome']);
 
         $this->load->view('home.php');
-        //$this->load->view('user_profile.php');
+        $this->load->view('user_profile.php');
 
       }
       else{
@@ -82,7 +82,7 @@ function login_user(){
 
 function user_profile(){
 
-$this->load->view('user_profile.php');
+  $this->load->view('user_profile.php');
 
 }
 public function user_logout(){

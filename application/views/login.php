@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Login-CI Login Registration</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" title="no title">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" title="no title">
   </head>
   <body>
 
+  <img src="<?php echo base_url('assets/images/iconeEscola.png'); ?>"  width="150px" height="150px" > 
+
     <div class="container">
+
+
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
             <div class="login-panel panel panel-success">
