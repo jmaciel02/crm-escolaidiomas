@@ -117,13 +117,25 @@ if(!$user_id){
                           </div>
 
                       
-                          <hr>
+                          <div class="row" id="footer">
+                                      <div class="col-sm-6">
 
-                          <h3 class="text-center">
-                            <a href="#" target="ext">Mangue3.com</a>
-                          </h3>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>
+                                            <a href="#" class="pull-right">©Copyright Inc.</a>
+                                        </p>
+                                      </div>
+                                    </div>
 
-                          <hr>
+                                  <hr>
+
+                                  <h3 class="text-center">
+                                    <a href="#" target="ext">3LM Gestão</a>
+                                  </h3>
+
+                                  <hr>
+                          </div>
 
 
                 </div><!-- /col-9 -->
