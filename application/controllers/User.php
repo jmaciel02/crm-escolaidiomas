@@ -87,7 +87,7 @@ function login_user(){
 
 function user_profile(){
 
-  $this->load->view('user_profile.php');
+  $this->load->view('home/home.php');
 
 }
 public function user_logout(){
