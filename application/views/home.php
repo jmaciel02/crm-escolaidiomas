@@ -31,7 +31,9 @@ if(!$user_id){
                   </a>
 
                 <ul class="nav">
-                   
+                    <li >
+                      <a href="<?php echo site_url('user/user_profile');?>" >Usuarios</a>
+                    </li>
 
                     <li class="active">
                       <a href="<?php base_url('aluno/listaAlunos');?>">Alunos</a>
