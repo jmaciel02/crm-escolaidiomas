@@ -126,7 +126,7 @@ if(!$user_id){
                                     <a href="#" class="pull-right">©Copyright Inc.</a>
                                 </p>
                             </div>
-                           
+                            </div>
 
                             <hr>
 
@@ -136,7 +136,7 @@ if(!$user_id){
                               </h3>
 
                             <hr>
-                         </div>
+                        
 
 
                 </div><!-- /col-9 -->
