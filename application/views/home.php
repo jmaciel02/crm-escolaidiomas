@@ -69,7 +69,7 @@ if(!$user_id){
 
                     <!-- content -->
                     <div class="col-sm-5" id="featured">
-                      <div class="page-header text-muted">Usuario: <?php echo $_SESSION['usuarioLogado'];  ?></div>
+                      <div class="page-header text-muted">Usuario:</div>
 
                         <form class="form-horizontal" action="" method="post">
                           <fieldset>
