@@ -118,40 +118,44 @@ if(!$user_id){
 
 
 
+
                           <!--Lista usuarios no banco -->
+                           <div class="col-sm-12" id="stories">
+                            <div class="page-header text-muted divider">
+                              Usuários Cadastrados
+                            </div>
+                           </div>
 
-                          <?php
+                            <table class="table table-hover">
+                              <tr>
+                                <th></th>
+                                <th>Usuarios</th>
+                                <th></th>
+                                <th></th>
+                              </tr>
 
-                          // exibindo os dados do banco....
+                              <tr>
+                                <td class="col-md-1">
+                                  <a class="btn btn-default" href="" role="button">Alterar</a>
+                              </td>
 
-                          $query = "select * from tusuario";
-                          $dados = mysql_query($query);
+                              <td class="col-md-6">
+                                <?php echo "nomeUsuario"; ?>
+                              </td>
 
-                          while ($linha = mysql_fetch_assoc($dados))
-                          {
-                          ?>
-                                      <tr>
-                                            <td class="col-md-1">
-                                            <a class="btn btn-default" href="adm.php?codigoAltUsuario=<?php echo $linha['codigoUsuario']; ?>" role="button">Alterar</a>
-                                      </td>
+                              <td class="col-md-1">
 
-                                      <td class="col-md-6">
-                                      <?php echo $linha['nomeUsuario']; ?></td>
-
-                                      <td class="col-md-1">
-
-                                      </td>
+                              </td>
 
 
-                                      <td class="col-md-1"><a class="btn btn-danger" href="<?php
-                            echo "excluir_usuario.php?codigoUsuario=" . $linha['codigoUsuario']; ?>" role="button">Excluir</a></td>
-                                            </tr>
-                                            <?php
-                            }
+                              <td class="col-md-1">
+                                <a class="btn btn-danger" href="" role="button">Excluir</a>
+                              </td>
+                              </tr>
+                      
+                       
 
-                          ?>
-
-                          </table>
+                            </table>
 
 
 
