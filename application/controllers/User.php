@@ -50,6 +50,12 @@ public function login_view(){
 
 }
 
+public function register_view(){
+
+  $this->load->view("register.php");
+
+}
+
 function login_user(){
   $user_login=array(
 

@@ -54,7 +54,7 @@
 
                         </fieldset>
                     </form>
-                <center><b>Not registered ?</b> <br></b><a href="<?php echo base_url('user'); ?>">Register here</a></center><!--for centered text-->
+                <center><b>Not registered ?</b> <br></b><a href="<?php echo base_url('user/register_view'); ?>">Register here</a></center><!--for centered text-->
 
                 </div>
             </div>
