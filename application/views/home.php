@@ -24,7 +24,10 @@ if(!$user_id){
           <!-- sidebar -->
             <div class="column col-sm-3" id="sidebar">
 
-                <img src="src="<?php echo base_url('assets/images/iconeEscola.png'); ?>""  width="150px" height="150px" > <a class="logo" href="#"><span>Gestão 3LM</span></a>
+                <img src="<?php echo base_url('assets/images/iconeEscola.png'); ?>"  width="150px" height="150px" > 
+                  <a class="logo" href="#">
+                    <span>Gestão Escola Idiomas</span>
+                  </a>
 
                 <ul class="nav">
                     <li class="active">
