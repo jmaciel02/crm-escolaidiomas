@@ -74,7 +74,6 @@ function login_user(){
         $this->session->set_userdata('user_name',$data['nome']);
 
         $this->load->view('home.php');
-        //$this->load->view('user_profile.php');
 
       }
       else{

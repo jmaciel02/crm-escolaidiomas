@@ -117,6 +117,45 @@ if(!$user_id){
                           </div>
 
 
+
+                          <!--Lista usuarios no banco -->
+
+                          <?php
+
+                          // exibindo os dados do banco....
+
+                          $query = "select * from tusuario";
+                          $dados = mysql_query($query);
+
+                          while ($linha = mysql_fetch_assoc($dados))
+                          {
+                          ?>
+                                      <tr>
+                                            <td class="col-md-1">
+                                            <a class="btn btn-default" href="adm.php?codigoAltUsuario=<?php echo $linha['codigoUsuario']; ?>" role="button">Alterar</a>
+                                      </td>
+
+                                      <td class="col-md-6">
+                                      <?php echo $linha['nomeUsuario']; ?></td>
+
+                                      <td class="col-md-1">
+
+                                      </td>
+
+
+                                      <td class="col-md-1"><a class="btn btn-danger" href="<?php
+                            echo "excluir_usuario.php?codigoUsuario=" . $linha['codigoUsuario']; ?>" role="button">Excluir</a></td>
+                                            </tr>
+                                            <?php
+                            }
+
+                          ?>
+
+                          </table>
+
+
+
+
                           <!-- Imprimir Relatorios -->
                           <hr>
                             <a class="btn btn-info" href="<?php echo "imprimir_usuario.php?opcao=1"; ?>" role="button">Imprimir Relatorio Todos os Usuario</a>
@@ -124,11 +163,11 @@ if(!$user_id){
 
 
                           <!-- footer-->
-                          <div class="" id="footer">
-                            <div class="">
+                          <div class="row" id="footer">
+                            <div class="col-sm-6">
 
                             </div>
-                            <div class="">
+                            <div class="col-sm-6">
                                 <p>
                                     <a href="#" class="pull-right">©Copyright Inc.</a>
                                 </p>
