@@ -118,24 +118,25 @@ if(!$user_id){
 
                       
                           <div class="row" id="footer">
-                                      <div class="col-sm-6">
+                            <div class="col-sm-6">
 
-                                      </div>
-                                      <div class="col-sm-6">
-                                        <p>
-                                            <a href="#" class="pull-right">©Copyright Inc.</a>
-                                        </p>
-                                      </div>
-                                    </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>
+                                    <a href="#" class="pull-right">©Copyright Inc.</a>
+                                </p>
+                            </div>
+                           
 
-                                  <hr>
+                            <hr>
 
-                                  <h3 class="text-center">
-                                    <a href="#" target="ext">3LM Gestão</a>
-                                  </h3>
+                              <h3 class="text-center">
+                                <a href="#" target="ext">Gestão Escola Idiomas</a>
 
-                                  <hr>
-                          </div>
+                              </h3>
+
+                            <hr>
+                         </div>
 
 
                 </div><!-- /col-9 -->
