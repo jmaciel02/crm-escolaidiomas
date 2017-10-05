@@ -73,7 +73,7 @@ function login_user(){
         $this->session->set_userdata('user_email',$data['email']);
         $this->session->set_userdata('user_name',$data['nome']);
 
-        $this->load->view('home.php');
+        $this->load->view('home/home.php');
 
       }
       else{

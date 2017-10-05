@@ -152,8 +152,7 @@ if(!$user_id){
                                 <a class="btn btn-danger" href="" role="button">Excluir</a>
                               </td>
                               </tr>
-                      
-                       
+                    
 
                             </table>
 
