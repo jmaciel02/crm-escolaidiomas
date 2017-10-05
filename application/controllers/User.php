@@ -59,7 +59,8 @@ function login_user(){
 
       $data=$this->user_model->login_user($user_login['email'],$user_login['senha']);
       var_dump($data);
-      echo "<br/> xxx: ".$data['idusario']."<br/>";
+      echo "<br/> xxx: [".$data['idusario']."]<br/>";
+      echo "<br/> xxx: [".$data['nome']."]<br/>";
 
 
       if($data)
