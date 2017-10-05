@@ -45,7 +45,7 @@ a {
     position: absolute;
     right: 0;
     top: 0;
-    background-image:url('../images/bg.jpg');
+    background-image:url('../assets/images/bg.jpg');
     background-color: #000000;
     background-attachment:fixed;
     background-repeat: no-repeat;
