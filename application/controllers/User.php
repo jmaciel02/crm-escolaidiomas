@@ -58,8 +58,8 @@ function login_user(){
     );
 
       $data=$this->user_model->login_user($user_login['email'],$user_login['senha']);
-      
-      
+      var_dump($data);
+
 
       if($data)
       {
@@ -71,7 +71,7 @@ function login_user(){
       }
       else{
         $this->session->set_flashdata('error_msg', 'Error Login occured,Try again.');
-        $this->load->view("login.php");
+        //$this->load->view("login.php");
 
       }
 
