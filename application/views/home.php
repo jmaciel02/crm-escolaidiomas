@@ -24,14 +24,14 @@ if(!$user_id){
           <!-- sidebar -->
             <div class="column col-sm-3" id="sidebar">
 
-                <img src="<?php echo base_url('assets/images/iconeEscola.png'); ?>"  width="150px" height="150px" > 
+                <img src="<?php echo base_url('assets/images/iconeEscola.png'); ?>"  width="150px" height="150px" style="margin: 30% 0 0 30%;"> 
                   <a class="logo" href="#">
                     <span>Gestão Escola Idiomas</span>
                   </a>
 
                 <ul class="nav">
                     <li class="active">
-                      <a href="<?=base_url('user/user_profile');?>" >Usuarios</a>
+                      <a href="<? echo site_url('user/user_profile');?>" >Usuarios</a>
                     </li>
 
                     <li>
