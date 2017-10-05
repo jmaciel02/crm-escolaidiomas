@@ -58,14 +58,11 @@ function login_user(){
     );
 
       $data=$this->user_model->login_user($user_login['email'],$user_login['senha']);
-      var_dump($data);
-      echo "<br/> xxx: [".$data['idusario']."]<br/>";
-      echo "<br/> xxx: [".$data['status']."]<br/>";
-
+     
 
       if($data)
       {
-        $this->session->set_userdata('user_id',$data['idusario']);
+        $this->session->set_userdata('user_id',$data['idusuario']);
         $this->session->set_userdata('user_email',$data['email']);
         $this->session->set_userdata('user_name',$data['nome']);
         $this->load->view('user_profile.php');
@@ -73,7 +70,7 @@ function login_user(){
       }
       else{
         $this->session->set_flashdata('error_msg', 'Error Login occured,Try again.');
-        //$this->load->view("login.php");
+        $this->load->view("login.php");
 
       }
 
