@@ -31,15 +31,15 @@ if(!$user_id){
 
                 <ul class="nav">
                     <li class="active">
-                      <a href="<?php echo base_url('user/user_profile');?>" >Usuarios</a>
+                      <a href="<?php base_url('user/user_profile');?>" >Usuarios</a>
                     </li>
 
                     <li>
-                      <a href="<?php echo base_url('aluno/listaAlunos');?>">Alunos</a>
+                      <a href="<?php base_url('aluno/listaAlunos');?>">Alunos</a>
                     </li>
 
                     <li>
-                      <a href="<?php echo base_url('aluno/cobranças');?>">Cobranças</a>
+                      <a href="<?php base_url('aluno/cobranças');?>">Cobranças</a>
                     </li>
 
                     <li>
