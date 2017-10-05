@@ -52,7 +52,7 @@ if(!$user_id){
 
                     <ul class="nav hidden-xs" id="sidebar-footer">
                     <li>
-                      <a href="#"><h3>Gestão 3LM</h3>Sistema de Gestão RH</a>
+                      <a href="#"><h3>Mangue3.com</h3>Sistema de Gestão Escola Idiomas</a>
                     </li>
                     
                 </ul>
