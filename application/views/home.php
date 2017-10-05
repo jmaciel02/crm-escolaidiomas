@@ -125,10 +125,10 @@ if(!$user_id){
 
                           <!-- footer-->
                           <div class="" id="footer">
-                            <div class="col-sm-6">
+                            <div class="">
 
                             </div>
-                            <div class="col-sm-6">
+                            <div class="">
                                 <p>
                                     <a href="#" class="pull-right">©Copyright Inc.</a>
                                 </p>
