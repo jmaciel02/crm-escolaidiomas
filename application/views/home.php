@@ -31,7 +31,7 @@ if(!$user_id){
 
                 <ul class="nav">
                     <li class="active">
-                      <a href="<?php base_url('user/user_profile');?>" >Usuarios</a>
+                      <a href="<?=base_url('user/user_profile');?>" >Usuarios</a>
                     </li>
 
                     <li>
