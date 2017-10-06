@@ -1,10 +1,11 @@
 <?php
 class User_model extends CI_model{
 
+/**
 
+**/
 
 public function register_user($user){
-
 
   $this->db->insert('usuario', $user);
 
@@ -19,14 +20,16 @@ public function login_user($email,$pass){
 
   if($query=$this->db->get())
   {
-      return $query->row_array();
+    return $query->row_array();
   }
   else{
     return false;
   }
 
-
 }
+
+
+
 public function email_check($email){
 
   $this->db->select('*');
