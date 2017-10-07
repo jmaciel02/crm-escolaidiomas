@@ -9,7 +9,7 @@
           <tr>
             <th></th>
             <th>Usuarios</th>
-            <th></th>
+            <th>Emails</th>
             <th></th>
           </tr>
 
