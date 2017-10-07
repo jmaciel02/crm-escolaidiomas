@@ -45,12 +45,5 @@ public function email_check($email){
 
 }
 
-//listar usuarios
-public function listuser(){
-
-
-
-}
-
 
 ?>
