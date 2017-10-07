@@ -99,7 +99,7 @@ public function ListarUsuario(){
 
     $query  = $this->user_model->get('usuario');
     $dados['usuarios'] = $query->result();
-    $this-load->view("list",$dados);  
+    $this->load->view("list",$dados);  
 
 }
 
