@@ -17,7 +17,7 @@
 
         <?php
         $dados=$this->user_model->ListarUsuario();
-        echo "tsset";
+     
         var_dump($dados);
         
 
@@ -31,7 +31,7 @@
 
 
             <td class="col-md-6">
-              <?php echo $dados['email']; ?>
+              <?php echo $linha['nome']; ?>
             </td>
 
             <td class="col-md-1">
