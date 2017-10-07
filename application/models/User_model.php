@@ -43,6 +43,14 @@ public function email_check($email){
     return true;
   }
 
+
+  public function ListarUsuario(){
+
+    $query = $this->user_model->get('usuario');
+    $dados['usuario'] = $query->result();
+    return $dados;
+ }
+
 }
 
 }

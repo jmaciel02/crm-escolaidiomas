@@ -73,35 +73,19 @@ function login_user(){
         $this->session->set_userdata('user_email',$data['email']);
         $this->session->set_userdata('user_name',$data['nome']);
 
-        $this->ListarUsuario();
-        $this->load->view('home/home.php');
+        $dado=$this->user_model->ListarUsuario();
+        $this->load->view('home/home');
+        $this->load->view('home/list',$dado);
 
       }
       else{
         $this->session->set_flashdata('error_msg', 'Ocorreu um erro, tente novamente.');
         $this->load->view("login");
-
       }
-
-
 }
 
 function user_profile(){
-
   $this->load->view('home/home.php');
-
-}
-
-/**
-* Listar todos os usuarios do banco
-*/
-
-public function ListarUsuario(){
-
-    $query  = $this->user_model->get('usuario');
-    $dados['usuario'] = $query->result();
-    $this->load->view("list",$dados);  
-
 }
 
 
