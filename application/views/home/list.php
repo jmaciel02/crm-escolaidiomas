@@ -17,8 +17,9 @@
 
         <?php
         $dados=$this->user_model->ListarUsuario();
-     
-        var_dump($dados);
+        echo $dados['nome'];
+        echo $dados['email'];
+       // var_dump($dados);
         
 
          while($linha = mysql_fetch_assoc($dados)){
