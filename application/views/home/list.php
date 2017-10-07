@@ -21,7 +21,7 @@
         
 
         // while($linha = mysql_fetch_assoc($dados)){
-        foreach ($linha as $dados) {
+        foreach ($dados as $linha) {
         
         ?> 
             <tr>
