@@ -25,6 +25,7 @@ if(!$user_id){
 
 			<?php 
       var_dump($dados);
+      echo "teste";
 
 				include "siderbar.php";
 				include "form.php";
