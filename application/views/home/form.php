@@ -5,7 +5,7 @@
 
                     <!-- content -->
                     <div class="col-sm-5" id="featured">
-                      <div class="page-header text-muted">Usuario:</div>
+                      <div class="page-header text-muted">Usuario: <?php  echo $this->session->userdata('user_name');  ?></div>
 
                         <form class="form-horizontal" action="" method="post">
                           <fieldset>
