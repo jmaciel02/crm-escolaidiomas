@@ -16,8 +16,9 @@
         <!- Litar Usuarios -->
 
         <?php
-        var_dump($dados);
         echo "teste";
+        var_dump($dados);
+        
 
          while($linha = mysql_fetch_assoc($dados)){
         

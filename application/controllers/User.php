@@ -77,7 +77,7 @@ function login_user(){
         
         
         $dados=$this->user_model->ListarUsuario();
-        $this->load->view('home/list',$dados);
+        $this->load->view('home/list.php',$dados);
         $this->load->view('home/home');
 
       }
