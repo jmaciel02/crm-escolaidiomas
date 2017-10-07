@@ -16,6 +16,7 @@
         <!- Litar Usuarios -->
 
         <?php
+        $dados=$this->user_model->ListarUsuario();
         echo "tsset";
         var_dump($dados);
         
