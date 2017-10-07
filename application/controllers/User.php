@@ -74,7 +74,7 @@ function login_user(){
         $this->session->set_userdata('user_name',$data['nome']);
        
         $dados=$this->user_model->ListarUsuario();
-        $this->load->view('home/home',$dados);
+        $this->load->view('home/list',$dados);
 
       }
       else{
