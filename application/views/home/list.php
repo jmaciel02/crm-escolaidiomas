@@ -16,7 +16,7 @@
         <!- Litar Usuarios -->
 
         <?php
-
+        echo $dados['nome'];
          while($linha = mysql_fetch_assoc($dados)){
         
         ?> 
