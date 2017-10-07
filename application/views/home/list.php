@@ -17,7 +17,7 @@
 
         <?php
         $dados=$this->user_model->ListarUsuario();
-        echo $dados['nome'];
+        echo $dados['0']['nome'];
         echo $dados['email'];
         var_dump($dados);
         
