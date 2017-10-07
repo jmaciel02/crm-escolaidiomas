@@ -33,7 +33,7 @@
             </td>
 
             <td class="col-md-1">
-                 <?php //echo $linha->email; ?>
+                 <?php echo $linha->email; ?>
             </td>
 
             <td class="col-md-1">
