@@ -18,9 +18,14 @@
         <?php
         $dados=$this->user_model->ListarUsuario();
         $test=json_decode($dados,true);
-        echo $dados[0]->["nome"];
-        echo $dados[0]->["email"];
-        //var_dump($dados);
+        
+
+        echo $test[0]["nome"];
+        echo "<br>";
+        echo $test[0]["email"];
+        echo "<br>";
+
+        var_dump($test);
         
 
          while($linha = mysql_fetch_assoc($dados)){
