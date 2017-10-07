@@ -21,7 +21,7 @@
         // while($linha = mysql_fetch_assoc($dados)){
         foreach ($dados as $linha) {
         
-          if($linha != null){
+          if($linha->nome != null){
         ?> 
             <tr>
               <td class="col-md-1">
