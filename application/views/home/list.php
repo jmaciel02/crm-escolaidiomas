@@ -16,7 +16,7 @@
         <!- Litar Usuarios -->
 
         <?php
-       echo "t: ".$linha->idusuario;
+       echo "t: ".$dados[0]->idusuario;
         
         // while($linha = mysql_fetch_assoc($dados)){
         foreach ($dados as $linha) {
