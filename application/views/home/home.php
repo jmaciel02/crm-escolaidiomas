@@ -24,9 +24,7 @@ if(!$user_id){
         <div class="row">
 
 			<?php 
-      var_dump($dados);
-      echo "teste";
-
+     
 				include "siderbar.php";
 				include "form.php";
         include "list.php";

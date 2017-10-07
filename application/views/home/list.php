@@ -17,9 +17,7 @@
 
         <?php
         $dados=$this->user_model->ListarUsuario();
-        echo $dados[0]->nome;
         
-
         // while($linha = mysql_fetch_assoc($dados)){
         foreach ($dados as $linha) {
         
