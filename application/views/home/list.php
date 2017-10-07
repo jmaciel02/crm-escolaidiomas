@@ -28,11 +28,11 @@
             </td>
 
 
-            <td class="col-md-3">
+            <td class="col-md-2">
               <?php echo $linha->nome; ?>
             </td>
 
-            <td class="col-md-2">
+            <td class="col-md-1">
                  <?php echo $linha->email; ?>
             </td>
 
