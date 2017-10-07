@@ -78,18 +78,35 @@ function login_user(){
       }
       else{
         $this->session->set_flashdata('error_msg', 'Ocorreu um erro, tente novamente.');
-        $this->load->view("login.php");
+        $this->load->view("login");
 
       }
 
 
 }
 
-function user_profile(){
+´function user_profile(){
 
   $this->load->view('home/home.php');
 
 }
+
+/**
+* Listar todos os usuarios do banco
+*/
+
+public function ListarUsuario(){
+
+    $query  = $this->db->get('usuario');
+    $dados['usuarios']= $query->result();
+    $this-load->view("list",$dados);  
+
+}
+
+
+/**
+* Sair do Sistema
+*/
 public function user_logout(){
 
   $this->session->sess_destroy();

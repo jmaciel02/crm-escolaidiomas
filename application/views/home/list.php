@@ -13,25 +13,32 @@
             <th></th>
           </tr>
 
+        <!- Litar Usuarios -->
+
+        <?php
+
+         while($linha = mysql_fetch_assoc($dados)){
         
-          <tr>
+        ?> 
+            <tr>
+              <td class="col-md-1">
+                <a class="btn btn-default" href="" role="button">Alterar</a>
+            </td>
+
+
+            <td class="col-md-6">
+              <?php echo $dados['nome']; ?>
+            </td>
+
             <td class="col-md-1">
-              <a class="btn btn-default" href="" role="button">Alterar</a>
-          </td>
 
-          <td class="col-md-6">
-            <?php echo "nomeUsuario"; ?>
-          </td>
+            </td>
 
-          <td class="col-md-1">
+            <td class="col-md-1">
+              <a class="btn btn-danger" href="" role="button">Excluir</a>
+            </td>
+            </tr>
 
-          </td>
-
-
-          <td class="col-md-1">
-            <a class="btn btn-danger" href="" role="button">Excluir</a>
-          </td>
-          </tr>
-
+          <?php } ?>
 
         </table>
