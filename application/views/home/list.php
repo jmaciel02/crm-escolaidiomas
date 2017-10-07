@@ -17,18 +17,11 @@
 
         <?php
         $dados=$this->user_model->ListarUsuario();
-        $test=json_decode($dados,true);
+        echo $dados[0]->nome;
         
 
-        echo $test[0]["nome"];
-        echo "<br>";
-        echo $test[0]["email"];
-        echo "<br>";
-
-        var_dump($test);
-        
-
-         while($linha = mysql_fetch_assoc($dados)){
+        // while($linha = mysql_fetch_assoc($dados)){
+        foreach ($linha as $dados) {
         
         ?> 
             <tr>
@@ -38,11 +31,11 @@
 
 
             <td class="col-md-6">
-              <?php echo $linha['0']->nome; ?>
+              <?php echo $linha[0]->nome; ?>
             </td>
 
             <td class="col-md-1">
-
+                 <?php echo $linha[0]->email; ?>
             </td>
 
             <td class="col-md-1">
