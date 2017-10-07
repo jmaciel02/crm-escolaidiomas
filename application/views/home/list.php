@@ -32,7 +32,7 @@
 
 
             <td class="col-md-6">
-              <?php echo $linha['nome']; ?>
+              <?php echo $linha['0']->nome; ?>
             </td>
 
             <td class="col-md-1">
