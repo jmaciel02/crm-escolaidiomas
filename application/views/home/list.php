@@ -16,11 +16,10 @@
         <!- Litar Usuarios -->
 
         <?php
-        echo "teste";
-        var_dump($dados);
+       
         
 
-         //while($linha = mysql_fetch_assoc($dados)){
+         while($linha = mysql_fetch_assoc($dados)){
         
         ?> 
             <tr>
@@ -30,7 +29,7 @@
 
 
             <td class="col-md-6">
-              <?php //echo $dados['email']; ?>
+              <?php echo $dados['email']; ?>
             </td>
 
             <td class="col-md-1">
@@ -42,6 +41,6 @@
             </td>
             </tr>
 
-          <?php //} ?>
+          <?php } ?>
 
         </table>

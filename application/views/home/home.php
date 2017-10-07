@@ -5,6 +5,7 @@ if(!$user_id){
 
   redirect('user/login_view');
 }
+ 
 
  ?>
 
@@ -23,10 +24,11 @@ if(!$user_id){
         <div class="row">
 
 			<?php 
+      var_dump($dados);
 
 				include "siderbar.php";
 				include "form.php";
-        //include "list.php";
+        include "list.php";
 				include "rodape.php";
 
 			?>
