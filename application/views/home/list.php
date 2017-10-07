@@ -17,6 +17,7 @@
 
         <?php
         $dados=$this->user_model->ListarUsuario();
+        $test=json_decode($dados,true);
         echo $dados[0]->["nome"];
         echo $dados[0]->["email"];
         //var_dump($dados);
