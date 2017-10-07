@@ -16,7 +16,7 @@
         <!- Litar Usuarios -->
 
         <?php
-       echo "t: ".$dados[0]->idusuario;
+       
         
         // while($linha = mysql_fetch_assoc($dados)){
         foreach ($dados as $linha) {
@@ -38,7 +38,7 @@
             </td>
 
             <td class="col-md-1">
-              <a class="btn btn-danger" href="<?php echo base_url('user/excluirUsuario').$linha->idusuario; ?>" role="button">Excluir</a>
+              <a class="btn btn-danger" href="<?php echo base_url('user/excluirUsuario/').$linha->idusuario; ?>" role="button">Excluir</a>
             </td>
             </tr>
 

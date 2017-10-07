@@ -87,6 +87,15 @@ function user_profile(){
 }
 
 
+public function alterarUsuario($id){
+
+
+  $this->load->view('teste',$id);
+
+}
+
+
+
 /**
 * Sair do Sistema
 */
