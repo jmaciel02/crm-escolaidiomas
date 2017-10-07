@@ -25,7 +25,7 @@
         ?> 
             <tr>
               <td class="col-md-1">
-                <a class="btn btn-default" href="" role="button">Alterar</a>
+                <a class="btn btn-default" href="<?php echo base_url('user/alterarUsuario/').$linha->id; ?>" role="button">Alterar</a>
             </td>
 
 
@@ -38,7 +38,7 @@
             </td>
 
             <td class="col-md-1">
-              <a class="btn btn-danger" href="" role="button">Excluir</a>
+              <a class="btn btn-danger" href="<?php echo base_url('user/excluirUsuario').$linha->id; ?>" role="button">Excluir</a>
             </td>
             </tr>
 
