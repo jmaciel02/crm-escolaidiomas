@@ -21,6 +21,7 @@
         // while($linha = mysql_fetch_assoc($dados)){
         foreach ($dados as $linha) {
         
+          if($linha != null){
         ?> 
             <tr>
               <td class="col-md-1">
@@ -41,6 +42,9 @@
             </td>
             </tr>
 
-          <?php } ?>
+          <?php 
+              }//if
+            }//foreach 
+          ?>
 
         </table>
