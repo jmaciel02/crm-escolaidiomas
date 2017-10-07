@@ -31,11 +31,11 @@
 
 
             <td class="col-md-6">
-              <?php echo $linha[0]->nome; ?>
+              <?php echo $linha->nome; ?>
             </td>
 
             <td class="col-md-1">
-                 <?php echo $linha[0]->email; ?>
+                 <?php //echo $linha->email; ?>
             </td>
 
             <td class="col-md-1">
