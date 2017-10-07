@@ -1,5 +1,7 @@
 <?php
-$user_id=$this->session->userdata('user_id');
+  $user_id=$this->session->userdata('user_id');
+
+   $dados=$this->user_model->ListarUsuario();
 
 if(!$user_id){
 
@@ -24,7 +26,7 @@ if(!$user_id){
         <div class="row">
 
 			<?php 
-     
+
 				include "siderbar.php";
 				include "form.php";
         include "list.php";

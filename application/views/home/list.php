@@ -16,7 +16,7 @@
         <!- Litar Usuarios -->
 
         <?php
-        $dados=$this->user_model->ListarUsuario();
+       
         
         // while($linha = mysql_fetch_assoc($dados)){
         foreach ($dados as $linha) {
