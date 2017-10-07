@@ -45,10 +45,12 @@ public function email_check($email){
 }
 
   public function ListarUsuario(){
-
-    $query = $this->user_model->get('usuario');
-    $dados['usuario'] = $query->result();
-    return $dados;
+    
+    $this->db->select('*');
+    $this->db->from('usuario');
+    $query = $this->db->get('usuario');
+    
+    return $query->result();
  }
 
 }
