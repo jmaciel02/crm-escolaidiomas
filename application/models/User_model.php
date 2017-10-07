@@ -42,7 +42,7 @@ public function email_check($email){
   }else{
     return true;
   }
-
+}
 
   public function ListarUsuario(){
 
