@@ -97,8 +97,8 @@ function user_profile(){
 
 public function ListarUsuario(){
 
-    $query  = $this->db->get('usuario');
-    $dados['usuarios']= $query->result();
+    $query  = $this->user_model->get('usuario');
+    $dados['usuarios'] = $query->result();
     $this-load->view("list",$dados);  
 
 }
