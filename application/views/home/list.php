@@ -17,6 +17,8 @@
 
         <?php
         var_dump($dados);
+        echo "teste";
+
          while($linha = mysql_fetch_assoc($dados)){
         
         ?> 
