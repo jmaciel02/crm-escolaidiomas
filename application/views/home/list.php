@@ -27,7 +27,7 @@
 
 
             <td class="col-md-6">
-              <?php echo $dados['nome']; ?>
+              <?php echo $dados['email']; ?>
             </td>
 
             <td class="col-md-1">
