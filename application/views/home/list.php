@@ -25,7 +25,7 @@
         ?> 
             <tr>
               <td class="col-md-1">
-                <a class="btn btn-default" href="<?php echo base_url('user/alterarUsuario/').$linha->idusuario; ?>" role="button">Alterar</a>
+                <a class="btn btn-default" href="<?php echo base_url('user/alterarUsuario/'.$linha->idusuario); ?>" role="button">Alterar</a>
             </td>
 
 
