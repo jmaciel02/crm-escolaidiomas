@@ -16,7 +16,8 @@
         <!- Litar Usuarios -->
 
         <?php
-       
+        echo "tsset";
+        var_dump($dados);
         
 
          while($linha = mysql_fetch_assoc($dados)){
