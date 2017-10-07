@@ -18,8 +18,8 @@
         <?php
        
         
-         while($linha = mysql_fetch_assoc($dados)){
-        //foreach ($dados as $linha) {
+        // while($linha = mysql_fetch_assoc($dados)){
+        foreach ($dados as $linha) {
         
         ?> 
             <tr>
