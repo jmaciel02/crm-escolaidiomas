@@ -86,14 +86,22 @@ function user_profile(){
   $this->load->view('home/home.php');
 }
 
-
+// Alterar
 public function alterarUsuario($id){
 
-  $teste['id'] = $id;
-  $this->load->view('home/list', $teste);
+  $id['id'] = $id;
+  $this->load->view('home/list', $id);
 
 }
 
+
+// Excluir
+public function excluirUsuario($id){
+
+  $id['id'] = $id;
+  $this->load->view('home/list', $id);
+
+}
 
 
 /**
