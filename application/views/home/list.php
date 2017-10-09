@@ -16,6 +16,10 @@
         <!- Litar Usuarios -->
 
         <?php
+
+          echo $teste;
+
+
           $dados=$this->user_model->ListarUsuario();
 
           array_pop($dados);
