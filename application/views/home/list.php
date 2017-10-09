@@ -16,8 +16,9 @@
         <!- Litar Usuarios -->
 
         <?php
-       
-          //array_pop($dados);
+          $dados=$this->user_model->ListarUsuario();
+
+          array_pop($dados);
       
           foreach ($dados as $linha) {
         
