@@ -1,7 +1,6 @@
 <?php
 
-	
-	echo "zwt: ";
-	echo $id;
+	$teste = $_REQUEST['teste'];
+	echo "Resposta: ".$id;
 
 ?>
