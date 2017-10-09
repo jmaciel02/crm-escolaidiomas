@@ -1,6 +1,7 @@
 <?php
 
-	$teste = $_REQUEST['teste'];
-	echo "Resposta: ".$id;
+ 	var_dump($id);
+
+	echo "<br> Resposta: ".$id;
 
 ?>
