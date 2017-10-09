@@ -1,6 +1,6 @@
 <?php
 
-	$id = $_REQUEST['id'];
+	$id ="SDSDFS";
 	echo "zzzzzzzzzz: ";
 	echo $id;
 
