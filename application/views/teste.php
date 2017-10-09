@@ -1,7 +1,7 @@
 <?php
 
 	$id = $_POST['id'];
-	echo "xxxxxxxxxxxx";
+	echo "zzzzzzzzzz: ";
 	echo $id;
 
 ?>
