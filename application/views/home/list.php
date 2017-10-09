@@ -17,11 +17,11 @@
 
         <?php
        
+          array_pop($dados);
+      
+          foreach ($dados as $linha) {
         
-        // while($linha = mysql_fetch_assoc($dados)){
-        foreach ($dados as $linha) {
-        
-          if($linha->nome != null){
+          
         ?> 
             <tr>
               <td class="col-md-1">
@@ -43,7 +43,7 @@
             </tr>
 
           <?php 
-              }//if
+             
             }//foreach 
           ?>
 

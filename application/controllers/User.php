@@ -90,7 +90,7 @@ function user_profile(){
 public function alterarUsuario($id){
 
   $id ="2";
-  $this->load->view('teste.php'?$id);
+  $this->load->view('teste.php',$id);
 
 }
 
