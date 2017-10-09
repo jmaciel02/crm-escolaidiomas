@@ -1,6 +1,6 @@
 <?php
 
-	$id = $_POST['id'];
+	$id = $_REQUEST['id'];
 	echo "zzzzzzzzzz: ";
 	echo $id;
 
