@@ -89,8 +89,8 @@ function user_profile(){
 
 public function alterarUsuario($id){
 
-  $teste['id'] =$id;
-  $this->load->view('list', $teste);
+  $teste['id'] = '2';
+  $this->load->view('home/list', $teste);
 
 }
 
