@@ -89,11 +89,11 @@ function user_profile(){
 // Alterar
 public function alterarUsuario($id){
 
-  $dados['idusuario']   = $id;
-  $dado['dados']= $this->user_model->ListarUsuario($id);
+
+  $dado['usuario']= $this->user_model->ListarUsuario($id);
 
 
-  $this->load->view('home/home', $dado);
+  $this->load->view('home/home', $usuario);
 
 
 
