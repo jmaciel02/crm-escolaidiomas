@@ -4,6 +4,7 @@
           $tituloformulario = "Incluir Usuario";
 
           var_dump($usuario);
+          
           //se recebemos uma variavel pelo metodo Get, faça o seguinte
           if(!empty($_GET['usuario'])){
             $codigo = $_GET['usuario'];
