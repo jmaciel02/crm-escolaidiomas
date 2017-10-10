@@ -17,8 +17,7 @@
 
         <?php
 
-          echo "id: ".$id;
-
+          
 
           $dados=$this->user_model->ListarUsuario();
 
