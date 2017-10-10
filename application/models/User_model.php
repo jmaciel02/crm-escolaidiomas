@@ -50,7 +50,7 @@ public function email_check($email){
     $this->db->from('usuario');
     $query = $this->db->get();
     
-    return $query->result();
+    return $query;
  }
 
 }
