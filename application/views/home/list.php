@@ -22,7 +22,7 @@
           
 
           $dados=$this->user_model->ListarUsuario();
-          var_dump($dados);
+          
           array_pop($dados);
       
           foreach ($dados as $linha) {
