@@ -30,10 +30,8 @@ if(!$user_id){
 				include "siderbar.php";
 				include "form.php";
         include "list.php";
-			
 
 			?>
-
 
         </div><!-- row -->
       </div><!-- box -->

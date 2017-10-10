@@ -1,3 +1,28 @@
+ <?php
+          //Variavel de destino para o formulario
+          $destino = "inserir_usuario.php";
+          $tituloformulario = "Incluir Usuario";
+
+
+          //se recebemos uma variavel pelo metodo Get, faça o seguinte
+          if(!empty($_GET['idusuario'])){
+            $codigo = $_GET['idusuario'];
+            
+            //exibindo os dados do banco....
+           
+            $usuario = $this->user_model->ListarUsuario($codigo);
+            
+            //alterar Destino
+            $destino = "alterar_usuario.php";
+            $tituloformulario = "Alterar Usuario";
+            
+            //ocultar o campo
+            $oculto = '<input type="hidden" name="codigo" value="'.$codigo.'"/>';
+          }
+
+
+       ?>
+
 <!-- main -->
         <div class="column col-sm-9" id="main">
             <div class="padding">
@@ -11,7 +36,7 @@
                           <fieldset>
 
                             <!-- Form Name -->
-                            <legend> Cadastrar Usuario </legend>
+                            <legend>  <? echo $tituloformulario; ?></legend>
 
                               <!-- Text input-->
                                 <div class="control-group">

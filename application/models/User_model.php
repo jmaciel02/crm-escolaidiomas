@@ -44,10 +44,11 @@ public function email_check($email){
   }
 }
 
-  public function ListarUsuario(){
+  public function ListarUsuario($id){
     
     $this->db->select('*');
     $this->db->from('usuario');
+    $this->db->where('idusuario',$id);
     $query = $this->db->get();
     
     return $query->result();

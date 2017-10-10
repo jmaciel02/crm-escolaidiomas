@@ -1,4 +1,6 @@
  <!--Lista usuarios no banco -->
+   
+
        <div class="col-sm-12" id="stories">
         <div class="page-header text-muted divider">
           Usuários Cadastrados
@@ -19,7 +21,7 @@
 
           
 
-          $dados=$this->user_model->ListarUsuario();
+          //$dados=$this->user_model->ListarUsuario();
 
           array_pop($dados);
       
