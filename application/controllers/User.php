@@ -90,9 +90,9 @@ function user_profile(){
 public function alterarUsuario($id){
 
   $dados['idusuario']   = $id;
-  $dados['dados']= $this->user_model->ListarUsuario();
+  $dados['dados']= $this->user_model->ListarUsuario($id);
 
-  $this->load->view('home/home', $id);
+  $this->load->view('home/home', $dados);
 
 }
 
@@ -101,7 +101,7 @@ public function alterarUsuario($id){
 public function excluirUsuario($id){
 
   $dados['id']   = $id;
-  $dados['dados']= $this->user_model->ListarUsuario();
+  $dados['dados']= $this->user_model->ListarUsuario($id);
 
   $this->load->view('home/home', $dados);
 
