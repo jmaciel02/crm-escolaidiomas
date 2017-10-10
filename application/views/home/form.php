@@ -3,10 +3,11 @@
           $destino = "inserir_usuario.php";
           $tituloformulario = "Incluir Usuario";
 
+          echo "teste".$usuario->nome;
 
           //se recebemos uma variavel pelo metodo Get, faça o seguinte
-          if(!empty($_GET['idusuario'])){
-            $codigo = $_GET['idusuario'];
+          if(!empty($_GET['usuario'])){
+            $codigo = $_GET['usuario'];
             
             //exibindo os dados do banco....
            

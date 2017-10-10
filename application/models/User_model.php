@@ -53,6 +53,19 @@ public function email_check($email){
     return $query->result();
  }
 
+
+public function buscarUsuario($id){
+    
+    $this->db->select('*');
+    $this->db->from('usuario');
+    $this->db->where('idusuario',$id);
+    $query = $this->db->get();
+    
+    return $query->result();
+ }
+
+
+
 }
 
 
