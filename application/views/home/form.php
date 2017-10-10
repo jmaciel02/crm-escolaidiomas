@@ -3,7 +3,7 @@
           $destino = "inserir_usuario.php";
           $tituloformulario = "Incluir Usuario";
 
-        echo "teste12: ".($usuario->nome);
+        echo "teste22: ".($usuario[0]->nome);
 
           //se recebemos uma variavel pelo metodo Get, faça o seguinte
           if(!empty($usuario)){
