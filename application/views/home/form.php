@@ -10,9 +10,7 @@
             //alterar Destino
             $destino = "alterar_usuario.php";
             $tituloformulario = "Alterar Usuario";
-            
-            //ocultar o campo
-            $oculto = '<input type="hidden" name="idusuario" value="'.$codigo.'"/>';
+          
           }
 
 
@@ -27,7 +25,7 @@
                     <div class="col-sm-5" id="featured">
                       <div class="page-header text-muted">Usuario: <?php  echo $this->session->userdata('user_name');  ?></div>
 
-                        <form class="form-horizontal" action="" method="post">
+                        <form class="form-horizontal" action="<?=$destino; ?>" method="post">
                           <fieldset>
 
                             <!-- Form Name -->
@@ -60,6 +58,16 @@
 
                                   </div>
                                 </div>
+
+
+                                <div class="control-group">
+                                  <label class="control-label" for="email">Status</label>
+                                  <div class="controls">
+                                    <input id="status" name="status" type="text" value="<?php echo isset($usuario)?$usuario[0]->status:""; ?>" autocomplete="off" />
+
+                                  </div>
+                                </div>
+
 
                             <!-- Button -->
                             <div class="control-group">
