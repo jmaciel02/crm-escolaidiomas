@@ -49,6 +49,8 @@ public function email_check($email){
     $this->db->select('*');
     $this->db->from('usuario');
     $query = $this->db->get();
+    
+    return $query->result();
  }
 
 }
