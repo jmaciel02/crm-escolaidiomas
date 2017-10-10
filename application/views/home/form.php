@@ -7,15 +7,14 @@
 
           //se recebemos uma variavel pelo metodo Get, faça o seguinte
           if(!empty($usuario[0])){
-            $codigo = $usuario[0]->id;
-            
-            
+            $codigo = $usuario[0]->idusuario;
+                        
             //alterar Destino
             $destino = "alterar_usuario.php";
             $tituloformulario = "Alterar Usuario";
             
             //ocultar o campo
-            $oculto = '<input type="hidden" name="codigo" value="'.$codigo.'"/>';
+            $oculto = '<input type="hidden" name="idusuario" value="'.$codigo.'"/>';
           }
 
 
