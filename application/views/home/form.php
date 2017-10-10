@@ -3,15 +3,12 @@
           $destino = "inserir_usuario.php";
           $tituloformulario = "Incluir Usuario";
 
-        echo "teste: ".($usuario[0]->nome);
+        echo "teste12: ".($usuario->nome);
 
           //se recebemos uma variavel pelo metodo Get, faça o seguinte
-          if(!empty($_GET['usuario'])){
-            $codigo = $_GET['usuario'];
+          if(!empty($usuario)){
+            $codigo = $usuario->id;
             
-            //exibindo os dados do banco....
-           
-            $usuario = $this->user_model->ListarUsuario($codigo);
             
             //alterar Destino
             $destino = "alterar_usuario.php";
@@ -39,29 +36,30 @@
                             <!-- Form Name -->
                             <legend>  <? echo $tituloformulario; ?></legend>
 
-                              <!-- Text input-->
+                                <!-- Text input-->
                                 <div class="control-group">
-                                  <label class="control-label" for="nomeUsuario">Matricula Usuario</label>
+                                  <label class="control-label" for="nome">Nome Usuario</label>
                                   <div class="controls">
-                                    <input id="codigoUsuario" name="codigoUsuario" type="text" value="<?php echo isset($usuario)?$usuario['codigoUsuario']:""; ?>" autocomplete="off" />
+                                    <input id="nome" name="nome" type="text" value="<?php  echo isset($usuario)?$usuario->nome:""; ?>"  autocomplete="off" />
 
                                   </div>
                                 </div>
 
                                 <!-- Text input-->
                                 <div class="control-group">
-                                  <label class="control-label" for="nomeUsuario">Nome Usuario</label>
+                                  <label class="control-label" for="senha">Senha Usuario</label>
                                   <div class="controls">
-                                    <input id="nomeUsuario" name="nomeUsuario" type="text" value="<?php echo isset($usuario)?$usuario['nomeUsuario']:""; ?>"  autocomplete="off" />
+                                    <input id="senha" name="senha" type="password" value="<?php echo isset($usuario)?$usuario->senha:""; ?>" autocomplete="off">
 
                                   </div>
                                 </div>
 
-                                <!-- Text input-->
+
+                                 <!-- Text input-->
                                 <div class="control-group">
-                                  <label class="control-label" for="senhaUsuario">Senha Usuario</label>
+                                  <label class="control-label" for="email">Email</label>
                                   <div class="controls">
-                                    <input id="senhaUsuario" name="senhaUsuario" type="password" value="<?php echo isset($usuario)?$usuario['senhaUsuario']:""; ?>" autocomplete="off">
+                                    <input id="codigoUsuario" name="codigoUsuario" type="text" value="<?php echo isset($usuario)?$usuario->email:""; ?>" autocomplete="off" />
 
                                   </div>
                                 </div>
