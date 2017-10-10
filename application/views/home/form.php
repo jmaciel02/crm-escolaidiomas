@@ -3,8 +3,8 @@
           $destino = "inserir_usuario.php";
           $tituloformulario = "Incluir Usuario";
 
-          var_dump($usuario);
-          
+        echo "teste: ".($usuario[0]->nome);
+
           //se recebemos uma variavel pelo metodo Get, faça o seguinte
           if(!empty($_GET['usuario'])){
             $codigo = $_GET['usuario'];
