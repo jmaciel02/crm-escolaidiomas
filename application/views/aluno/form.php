@@ -84,7 +84,7 @@
                                 <div class="control-group">
                                   <label class="control-label" for="email">Nota</label>
                                   <div class="controls">
-                                    <input id="nota" name="nota" type="text" value="<?php echo isset($aluno)?$aluno[0]->nota:""; ?>" autocomplete="off" />
+                                    <input id="notas" name="notas" type="text" value="<?php echo isset($aluno)?$aluno[0]->notas:""; ?>" autocomplete="off" />
 
                                   </div>
                                 </div>
