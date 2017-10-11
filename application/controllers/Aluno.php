@@ -20,11 +20,14 @@ public function index()
 public function novo_aluno(){
 
       $aluno=array(
-      'nome'  =>$this->input->post('nome'),
-      'email' =>$this->input->post('email'),
-      'senha' =>$this->input->post('senha'),
-      'status'=>$this->input->post('status'),
+      'idaluno'       =>$this->input->post('idaluno'),
+      'nomealuno'     =>$this->input->post('nomealuno'),
+      'emailaluno'    =>$this->input->post('emailaluno'),
+      'matricula'     =>$this->input->post('matricula'),
+      'endereco'      =>$this->input->post('endereco'),
+      'turma'         =>$this->input->post('turma'),
         );
+
       $email_check=$this->aluno_model->email_check($aluno['email']);
 
   if($email_check){
@@ -38,31 +41,6 @@ else{
   }
 }
 
-public function register_aluno(){
-
-      $aluno=array(
-      'nome'  =>$this->input->post('nome'),
-      'email' =>$this->input->post('email'),
-      'senha' =>$this->input->post('senha'),
-      'status'=>$this->input->post('status'),
-        );
-        print_r($aluno);
-
-        $email_check=$this->aluno_model->email_check($aluno['email']);
-
-if($email_check){
-  $this->aluno_model->register_aluno($aluno);
-  $this->session->set_flashdata('success_msg', 'Registrado com sucesso. Agora acesse sua conta.');
-  
-  redirect('aluno/login_view');
-
-}
-else{
-
-  $this->session->set_flashdata('error_msg', 'Ocorreu um erro, tente novamente.');
-  redirect('aluno');
-  }
-}
 
 public function update_aluno(){
 
@@ -75,9 +53,19 @@ public function update_aluno(){
       'turma'         =>$this->input->post('turma'),
         );
 
-    $this->aluno_model->updatealuno($aluno);
-    $this->session->set_flashdata('success_msg', 'Atualizado com sucesso.');
-    redirect('aluno/aluno_profile');
+
+    $email_check=$this->aluno_model->email_check($aluno['email']);
+
+  if($email_check){
+    $this->aluno_model->register_aluno($aluno);
+     redirect('aluno/aluno_profile');
+  }
+else{
+
+  $this->session->set_flashdata('error_msg', 'Ocorreu um erro, tente novamente.');
+   redirect('aluno/aluno_profile');
+  }
+   
 }
 
 
