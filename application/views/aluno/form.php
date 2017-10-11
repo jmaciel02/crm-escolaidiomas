@@ -1,14 +1,14 @@
  <?php
           //Variavel de destino para o formulario
-          $destino = "user/novo_user";
-          $tituloformulario = "Incluir Usuario";
+          $destino = "aluno/novo_aluno";
+          $tituloformulario = "Incluir Aluno";
 
           //se recebemos uma variavel pelo metodo Get, faça o seguinte
-          if(!empty($usuario[0])){
+          if(!empty($aluno[0])){
 
             //alterar Destino
-            $destino = "user/update_user";
-            $tituloformulario = "Alterar Usuario";
+            $destino = "aluno/update_aluno";
+            $tituloformulario = "Alterar Aluno";
             
           }
 
@@ -22,11 +22,11 @@
 
                     <!-- content -->
                     <div class="col-sm-5" id="featured">
-                      <div class="page-header text-muted">Usuario: <?php  echo $this->session->userdata('user_name');  ?></div>
+                      <div class="page-header text-muted">aluno: <?php  echo $this->session->userdata('user_name');  ?></div>
 
                         <form class="form-horizontal" action="<?php echo base_url($destino); ?>" method="post">
 
-                        <input type="hidden" name="idusuario" id="idusuario" value="<?php  echo isset($usuario)?$usuario[0]->idusuario:""; ?>">
+                        <input type="hidden" name="idaluno" id="idaluno" value="<?php  echo isset($aluno)?$aluno[0]->idaluno:""; ?>">
 
                           <fieldset>
 
@@ -35,18 +35,18 @@
 
                                 <!-- Text input-->
                                 <div class="control-group">
-                                  <label class="control-label" for="nome">Nome Usuario</label>
+                                  <label class="control-label" for="nome">Nome aluno</label>
                                   <div class="controls">
-                                    <input id="nome" name="nome" type="text" value="<?php  echo isset($usuario)?$usuario[0]->nome:""; ?>"  autocomplete="off" />
+                                    <input id="nome" name="nome" type="text" value="<?php  echo isset($aluno)?$aluno[0]->nome:""; ?>"  autocomplete="off" />
 
                                   </div>
                                 </div>
 
                                 <!-- Text input-->
                                 <div class="control-group">
-                                  <label class="control-label" for="senha">Senha Usuario</label>
+                                  <label class="control-label" for="senha">Senha aluno</label>
                                   <div class="controls">
-                                    <input id="senha" name="senha" type="password" value="<?php echo isset($usuario)?$usuario[0]->senha:""; ?>" autocomplete="off">
+                                    <input id="senha" name="senha" type="password" value="<?php echo isset($aluno)?$aluno[0]->senha:""; ?>" autocomplete="off">
 
                                   </div>
                                 </div>
@@ -56,7 +56,7 @@
                                 <div class="control-group">
                                   <label class="control-label" for="email">Email</label>
                                   <div class="controls">
-                                    <input id="email" name="email" type="text" value="<?php echo isset($usuario)?$usuario[0]->email:""; ?>" autocomplete="off" />
+                                    <input id="email" name="email" type="text" value="<?php echo isset($aluno)?$aluno[0]->email:""; ?>" autocomplete="off" />
 
                                   </div>
                                 </div>
@@ -65,7 +65,7 @@
                                 <div class="control-group">
                                   <label class="control-label" for="email">Status</label>
                                   <div class="controls">
-                                    <input id="status" name="status" type="text" value="<?php echo isset($usuario)?$usuario[0]->status:""; ?>" autocomplete="off" />
+                                    <input id="status" name="status" type="text" value="<?php echo isset($aluno)?$aluno[0]->status:""; ?>" autocomplete="off" />
 
                                   </div>
                                 </div>
