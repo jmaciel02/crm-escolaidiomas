@@ -42,14 +42,7 @@
                                   </div>
                                 </div>
 
-                                <!-- Text input-->
-                                <div class="control-group">
-                                  <label class="control-label" for="senha">Senha</label>
-                                  <div class="controls">
-                                    <input id="senha" name="senha" type="password" value="<?php echo isset($aluno)?$aluno[0]->senha:""; ?>" autocomplete="off">
 
-                                  </div>
-                                </div>
 
 
                                  <!-- Text input-->
