@@ -27,7 +27,7 @@
 
                         <form class="form-horizontal" action="<?php echo base_url($destino); ?>" method="post">
 
-                        <input type="hidden" name="codigo" value="<?php echo $codigo; ?>">
+                        <input type="hidden" name="codigo" id="codigo" value="<?php echo $codigo; ?>">
 
                           <fieldset>
 
