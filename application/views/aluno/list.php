@@ -1,27 +1,27 @@
- <!--Lista usuarios no banco -->
+ <!--Lista aluno no banco -->
    
 
        <div class="col-sm-12" id="stories">
         <div class="page-header text-muted divider">
-          Usuários Cadastrados
+          Alunos Matriculados
         </div>
        </div>
 
         <table class="table table-hover">
           <tr>
             <th></th>
-            <th>Usuarios</th>
+            <th>Aluno</th>
             <th>Emails</th>
             <th>Status</th>
           </tr>
 
-        <!- Litar Usuarios -->
+        <!- Litar Alunos -->
 
         <?php
 
           
 
-          $dados=$this->user_model->ListarUsuario();
+          $dados=$this->aluno_model->ListarAlunos();
           
           //array_pop($dados);
       
@@ -31,7 +31,7 @@
         ?> 
             <tr>
               <td class="col-md-1">
-                <a class="btn btn-default" href="<?php echo base_url('user/alterarUsuario/'.$linha->idusuario); ?>" role="button">Alterar</a>
+                <a class="btn btn-default" href="<?php echo base_url('aluno/alterarAluno/'.$linha->idaluno); ?>" role="button">Alterar</a>
             </td>
 
 
@@ -49,7 +49,7 @@
             </td>
 
             <td class="col-md-1">
-              <a class="btn btn-danger" href="<?php echo base_url('user/excluirUsuario/').$linha->idusuario; ?>" role="button">Excluir</a>
+              <a class="btn btn-danger" href="<?php echo base_url('aluno/excluirAluno/').$linha->idaluno; ?>" role="button">Excluir</a>
             </td>
             </tr>
 

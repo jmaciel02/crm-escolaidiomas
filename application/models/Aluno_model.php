@@ -52,7 +52,7 @@
       }
     }
 
-      public function ListarAluno(){
+      public function ListarAlunos(){
         
         $this->db->select('*');
         $this->db->from('aluno');
