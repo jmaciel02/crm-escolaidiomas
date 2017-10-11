@@ -133,7 +133,7 @@ public function alterarAluno($id){
 public function excluirAluno($id){
 
   $dados['idualuno']   = $id;
-  $this->aluno_model->excluirUsuario($id);
+  $this->aluno_model->excluirAluno($id);
   $this->load->view('aluno/home', $dados);
 
 }
@@ -148,6 +148,19 @@ public function aluno_logout(){
   redirect('aluno/login_view', 'refresh');
 }
 
+public function cobranca(){
+  # listar alunos inadiplementes
+
+
 }
+
+
+
+}
+
+
+
+
+
 
 ?>
