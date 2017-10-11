@@ -28,7 +28,7 @@ public function novo_aluno(){
       'turma'         =>$this->input->post('turma'),
         );
 
-      $email_check=$this->aluno_model->email_check($aluno['email']);
+      $email_check=$this->aluno_model->email_check($aluno['emailaluno']);
 
   if($email_check){
     $this->aluno_model->register_aluno($aluno);
@@ -54,7 +54,7 @@ public function update_aluno(){
         );
 
 
-    $email_check=$this->aluno_model->email_check($aluno['email']);
+    $email_check=$this->aluno_model->email_check($aluno['emailaluno']);
 
   if($email_check){
     $this->aluno_model->register_aluno($aluno);
