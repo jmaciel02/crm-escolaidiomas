@@ -8,8 +8,8 @@
             $codigo = $usuario[0]->idusuario;
             
             var_dump($usuario);
-            
 
+            exit();
 
             //alterar Destino
             $destino = "user/update_user";
