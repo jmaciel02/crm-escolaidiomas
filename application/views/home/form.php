@@ -10,7 +10,7 @@
             //alterar Destino
             $destino = "user/update_user";
             $tituloformulario = "Alterar Usuario";
-            $idusuario = $usuario[0]->idusuario;
+            
           }
 
 
@@ -27,7 +27,7 @@
 
                         <form class="form-horizontal" action="<?php echo base_url($destino); ?>" method="post">
 
-                        <input type="hidden" name="idusuario" value="<?php echo $idusuario; ?>">
+                        <input type="hidden" name="codigo" value="<?php echo $codigo; ?>">
 
                           <fieldset>
 

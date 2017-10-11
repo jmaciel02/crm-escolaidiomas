@@ -44,10 +44,11 @@ else{
 public function update_user(){
 
     $user=array(
-      'nome'  =>$this->input->post('nome'),
-      'email' =>$this->input->post('email'),
-      'senha' =>$this->input->post('senha'),
-      'status'=>$this->input->post('status'),
+      'idusario'=>$this->input->post('codigo')
+      'nome'    =>$this->input->post('nome'),
+      'email'   =>$this->input->post('email'),
+      'senha'   =>$this->input->post('senha'),
+      'status'  =>$this->input->post('status'),
         );
 
     $this->user_model->updateuser($user);

@@ -12,8 +12,10 @@
     }
 
     public function updateuser($user){
-
+      
+      $this->db->where('idusuario',$user['idusuario']);
       $this->db->update('usuario', $user);
+      
 
     }    
 
