@@ -12,7 +12,7 @@
             <th></th>
             <th>Usuarios</th>
             <th>Emails</th>
-            <th></th>
+            <th>Status</th>
           </tr>
 
         <!- Litar Usuarios -->
@@ -41,6 +41,11 @@
 
             <td class="col-md-1">
                  <?php echo $linha->email; ?>
+            </td>
+
+
+             <td class="col-md-1">
+                 <?php echo $linha->status; ?>
             </td>
 
             <td class="col-md-1">
