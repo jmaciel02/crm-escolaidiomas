@@ -41,7 +41,7 @@ else{
   }
 }
 
-public function updateUser(){
+public function update_user(){
 
     $user=array(
       'nome'  =>$this->input->post('nome'),
