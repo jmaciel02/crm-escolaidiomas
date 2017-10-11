@@ -19,10 +19,10 @@ public function index()
 public function register_user(){
 
       $user=array(
-      'nome'  =>$this->input->post('user_name'),
-      'email' =>$this->input->post('user_email'),
-      'senha' =>$this->input->post('user_password'),
-      'status'=>"1"
+      'nome'  =>$this->input->post('nome'),
+      'email' =>$this->input->post('email'),
+      'senha' =>$this->input->post('senha'),
+      'status'=>$this->input->post('status'),
         );
         print_r($user);
 
