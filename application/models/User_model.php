@@ -83,8 +83,8 @@
 
 
     public function excluirUsuario($id){
-      $this->db->where('idusuario',$user['idusuario']);
-      $this->db->delete('usuario', $user);
+      $this->db->where('idusuario',$id);
+      $this->db->delete('usuario');
 
     }
 
