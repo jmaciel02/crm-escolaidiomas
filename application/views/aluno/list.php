@@ -10,9 +10,11 @@
         <table class="table table-hover">
           <tr>
             <th></th>
+            <th>Matricula</th>
             <th>Aluno</th>
             <th>Emails</th>
-            <th>Status</th>
+            <th>Notas</th>
+            <th>Turma</th>
           </tr>
 
         <!- Litar Alunos -->
@@ -34,18 +36,24 @@
                 <a class="btn btn-default" href="<?php echo base_url('aluno/alterarAluno/'.$linha->idaluno); ?>" role="button">Alterar</a>
             </td>
 
+            <td class="col-md-2">
+              <?php echo $linha->matricula; ?>
+            </td>
 
             <td class="col-md-2">
-              <?php echo $linha->nome; ?>
+              <?php echo $linha->nomealuno; ?>
             </td>
 
             <td class="col-md-1">
-                 <?php echo $linha->email; ?>
+                 <?php echo $linha->emailaluno; ?>
             </td>
 
+            <td class="col-md-1">
+                 <?php echo $linha->notas; ?>
+            </td>
 
              <td class="col-md-1">
-                 <?php echo $linha->status; ?>
+                 <?php echo $linha->turma; ?>
             </td>
 
             <td class="col-md-1">

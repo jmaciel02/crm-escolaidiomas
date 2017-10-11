@@ -22,7 +22,7 @@
 
                     <!-- content -->
                     <div class="col-sm-5" id="featured">
-                      <div class="page-header text-muted">aluno: <?php  echo $this->session->userdata('user_name');  ?></div>
+                      <div class="page-header text-muted">Usuário: <?php  echo $this->session->userdata('user_name');  ?></div>
 
                         <form class="form-horizontal" action="<?php echo base_url($destino); ?>" method="post">
 

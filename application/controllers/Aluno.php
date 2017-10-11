@@ -122,6 +122,8 @@ function aluno_profile(){
   $this->load->view('aluno/home.php');
 }
 
+
+
 // Alterar
 public function alterarUsuario($id){
 
