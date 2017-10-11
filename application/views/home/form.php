@@ -26,7 +26,7 @@
 
                         <form class="form-horizontal" action="<?php echo base_url($destino); ?>" method="post">
 
-                        <input type="hidden" name="idusuario" id="idusuario" value="<?php  echo isset($usuario)?$usuario[0]->idusuario; ?>">
+                        <input type="hidden" name="idusuario" id="idusuario" value="<?php  echo isset($usuario)?$usuario[0]->idusuario:""; ?>">
 
                           <fieldset>
 
