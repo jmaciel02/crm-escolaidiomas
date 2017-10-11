@@ -59,7 +59,7 @@ public function update_aluno(){
     $email_check=$this->aluno_model->email_check($aluno['emailaluno']);
 
   if(!$email_check){
-    $this->aluno_model->register_aluno($aluno);
+    $this->aluno_model->updatealuno($aluno);
      redirect('aluno/aluno_profile');
   }
 else{
