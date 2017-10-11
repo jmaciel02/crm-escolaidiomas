@@ -1,6 +1,6 @@
  <?php
           //Variavel de destino para o formulario
-          $destino = "inserir_usuario.php";
+          $destino = "user/register_user";
           $tituloformulario = "Incluir Usuario";
 
           //se recebemos uma variavel pelo metodo Get, faça o seguinte
@@ -8,7 +8,7 @@
             $codigo = $usuario[0]->idusuario;
                         
             //alterar Destino
-            $destino = "alterar_usuario.php";
+            //$destino = "user/update_user";
             $tituloformulario = "Alterar Usuario";
           
           }
@@ -25,7 +25,7 @@
                     <div class="col-sm-5" id="featured">
                       <div class="page-header text-muted">Usuario: <?php  echo $this->session->userdata('user_name');  ?></div>
 
-                        <form class="form-horizontal" action="<?=$destino; ?>" method="post">
+                        <form class="form-horizontal" action="<?php echo base_url($destino); method="post">
                           <fieldset>
 
                             <!-- Form Name -->
