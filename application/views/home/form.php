@@ -5,11 +5,6 @@
 
           //se recebemos uma variavel pelo metodo Get, faça o seguinte
           if(!empty($usuario[0])){
-            $codigo = $usuario[0]->idusuario;
-            
-            var_dump($usuario);
-
-            exit();
 
             //alterar Destino
             $destino = "user/update_user";
@@ -31,7 +26,7 @@
 
                         <form class="form-horizontal" action="<?php echo base_url($destino); ?>" method="post">
 
-                        <input type="hidden" name="codigo" id="codigo" value="<?php echo $codigo; ?>">
+                        <input type="hidden" name="idusuario" id="idusuario" value="<?php  echo isset($usuario)?$usuario[0]->idusuario; ?>">
 
                           <fieldset>
 

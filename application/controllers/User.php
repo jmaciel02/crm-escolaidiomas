@@ -44,7 +44,7 @@ else{
 public function update_user(){
 
     $user=array(
-      'idusario'=>$this->input->post('codigo'),
+      'idusario'=>$this->input->post('idusario'),
       'nome'    =>$this->input->post('nome'),
       'email'   =>$this->input->post('email'),
       'senha'   =>$this->input->post('senha'),
