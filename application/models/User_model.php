@@ -11,6 +11,12 @@
 
     }
 
+    public function updateUser($user){
+
+      $this->db->update('usuario', $user);
+
+    }    
+
     public function login_user($email,$pass){
 
       $this->db->select('*');

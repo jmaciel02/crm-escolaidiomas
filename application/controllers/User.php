@@ -42,6 +42,22 @@ else{
 
 }
 
+public function updateUser(){
+
+    $user=array(
+      'nome'  =>$this->input->post('nome'),
+      'email' =>$this->input->post('email'),
+      'senha' =>$this->input->post('senha'),
+      'status'=>$this->input->post('status'),
+        );
+
+    $this->user_model->updateUser($user);
+    $this->session->set_flashdata('success_msg', 'Atualizado com sucesso.');
+    redirect('user/user_profile');
+}
+
+
+
 }
 
 public function login_view(){

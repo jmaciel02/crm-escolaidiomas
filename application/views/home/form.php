@@ -8,7 +8,7 @@
             $codigo = $usuario[0]->idusuario;
                         
             //alterar Destino
-            //$destino = "user/update_user";
+            $destino = "user/update_user";
             $tituloformulario = "Alterar Usuario";
           
           }
@@ -54,7 +54,7 @@
                                 <div class="control-group">
                                   <label class="control-label" for="email">Email</label>
                                   <div class="controls">
-                                    <input id="codigoUsuario" name="codigoUsuario" type="text" value="<?php echo isset($usuario)?$usuario[0]->email:""; ?>" autocomplete="off" />
+                                    <input id="email" name="email" type="text" value="<?php echo isset($usuario)?$usuario[0]->email:""; ?>" autocomplete="off" />
 
                                   </div>
                                 </div>
