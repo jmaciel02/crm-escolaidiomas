@@ -1,6 +1,6 @@
  <?php
           //Variavel de destino para o formulario
-          $destino = "user/register_user";
+          $destino = "user/novo_user";
           $tituloformulario = "Incluir Usuario";
 
           //se recebemos uma variavel pelo metodo Get, faça o seguinte

@@ -16,6 +16,25 @@ public function index()
   $this->load->view("login.php");
 }
 
+
+public function novo_user(){
+
+      $user=array(
+      'nome'  =>$this->input->post('nome'),
+      'email' =>$this->input->post('email'),
+      'senha' =>$this->input->post('senha'),
+      'status'=>$this->input->post('status'),
+        );
+        print_r($user);
+
+        $email_check=$this->user_model->email_check($user['email']);
+
+  if($email_check){
+    $this->user_model->register_user($user);
+     redirect('user/user_profile');
+  }
+}
+
 public function register_user(){
 
       $user=array(
@@ -32,7 +51,7 @@ if($email_check){
   $this->user_model->register_user($user);
   $this->session->set_flashdata('success_msg', 'Registrado com sucesso. Agora acesse sua conta.');
   
-  //redirect('user/login_view');
+  redirect('user/login_view');
 
 }
 else{
