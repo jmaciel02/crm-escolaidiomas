@@ -117,8 +117,7 @@ public function alterarUsuario($id){
 public function excluirUsuario($id){
 
   $dados['idusuario']   = $id;
-  $dados['dados']= $this->user_model->ListarUsuario($id);
-
+  $this->user_model->excluirUsuario($id);
   $this->load->view('home/home', $dados);
 
 }
