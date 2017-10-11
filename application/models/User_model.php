@@ -11,7 +11,7 @@
 
     }
 
-    public function updateUser($user){
+    public function updateuser($user){
 
       $this->db->update('usuario', $user);
 

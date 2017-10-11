@@ -50,7 +50,7 @@ public function update_user(){
       'status'=>$this->input->post('status'),
         );
 
-    $this->user_model->updateUser($user);
+    $this->user_model->updateuser($user);
     $this->session->set_flashdata('success_msg', 'Atualizado com sucesso.');
     redirect('user/user_profile');
 }
