@@ -12,7 +12,7 @@
                     </li>
 
                     <li class="active">
-                      <a href="<?php echo base_url('aluno/listaAlunos');?>">Alunos</a>
+                      <a href="<?php echo base_url('aluno/aluno_profile');?>">Alunos</a>
                     </li>
 
                     <li>
