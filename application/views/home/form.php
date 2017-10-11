@@ -6,7 +6,9 @@
           //se recebemos uma variavel pelo metodo Get, faça o seguinte
           if(!empty($usuario[0])){
             $codigo = $usuario[0]->idusuario;
-                        
+             var_dump($usuario);
+
+
             //alterar Destino
             $destino = "user/update_user";
             $tituloformulario = "Alterar Usuario";
