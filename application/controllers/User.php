@@ -31,7 +31,8 @@ public function register_user(){
 if($email_check){
   $this->user_model->register_user($user);
   $this->session->set_flashdata('success_msg', 'Registrado com sucesso. Agora acesse sua conta.');
-  redirect('user/login_view');
+  
+  //redirect('user/login_view');
 
 }
 else{
