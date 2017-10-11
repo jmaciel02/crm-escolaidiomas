@@ -45,7 +45,7 @@
             </td>
 
             <td class="col-md-1">
-                 <?php echo $linha->emailaluno; ?>
+                 <?php echo $linha->emailluno; ?>
             </td>
 
             <td class="col-md-1">

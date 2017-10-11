@@ -125,10 +125,10 @@ function aluno_profile(){
 
 
 // Alterar
-public function alterarUsuario($id){
+public function alterarAluno($id){
 
 
-  $usuario['usuario']= $this->aluno_model->buscarUsuario($id);
+  $usuario['aluno']= $this->aluno_model->buscarAluno($id);
 
 
   $this->load->view('aluno/home', $usuario);
@@ -139,9 +139,9 @@ public function alterarUsuario($id){
 
 
 // Excluir
-public function excluirUsuario($id){
+public function excluirAluno($id){
 
-  $dados['idusuario']   = $id;
+  $dados['idualuno']   = $id;
   $this->aluno_model->excluirUsuario($id);
   $this->load->view('aluno/home', $dados);
 
