@@ -38,8 +38,7 @@ else{
 
   $this->session->set_flashdata('error_msg', 'Ocorreu um erro, tente novamente.');
   redirect('user');
-
-
+  }
 }
 
 public function updateUser(){
