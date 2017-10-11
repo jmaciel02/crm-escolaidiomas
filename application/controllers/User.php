@@ -56,9 +56,6 @@ public function updateUser(){
 }
 
 
-
-}
-
 public function login_view(){
 
   $this->load->view("login.php");
