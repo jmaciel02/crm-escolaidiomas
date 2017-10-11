@@ -1,11 +1,11 @@
 <?php
   $user_id=$this->session->userdata('user_id');
 
-   $dados=$this->user_model->ListarUsuario();
+   $dados=$this->aluno_model->ListarAlunos();
 
 if(!$user_id){
 
-  redirect('user/login_view');
+  redirect('aluno/login_view');
 }
  
 
