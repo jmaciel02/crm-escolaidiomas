@@ -67,11 +67,12 @@ else{
 public function update_aluno(){
 
     $aluno=array(
-      'idusuario'=>$this->input->post('idusuario'),
-      'nome'    =>$this->input->post('nome'),
-      'email'   =>$this->input->post('email'),
-      'senha'   =>$this->input->post('senha'),
-      'status'  =>$this->input->post('status'),
+      'idaluno'       =>$this->input->post('idaluno'),
+      'nomealuno'     =>$this->input->post('nomealuno'),
+      'emailaluno'    =>$this->input->post('emailaluno'),
+      'matricula'     =>$this->input->post('matricula'),
+      'endereco'      =>$this->input->post('endereco'),
+      'turma'         =>$this->input->post('turma'),
         );
 
     $this->aluno_model->updatealuno($aluno);
