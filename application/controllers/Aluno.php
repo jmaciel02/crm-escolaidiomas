@@ -56,18 +56,10 @@ public function update_aluno(){
         );
 
 
-    $email_check=$this->aluno_model->email_check($aluno['emailaluno']);
 
-  if($email_check){
     $this->aluno_model->updatealuno($aluno);
-     redirect('aluno/aluno_profile');
-  }
-else{
-
-  $this->session->set_flashdata('error_msg', 'Ocorreu um erro, tente novamente.');
-   redirect('aluno/aluno_profile');
-  }
-   
+    redirect('aluno/aluno_profile');
+  
 }
 
 

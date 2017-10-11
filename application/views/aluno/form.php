@@ -35,7 +35,7 @@
 
                                 <!-- Text input-->
                                 <div class="control-group">
-                                  <label class="control-label" for="nome">Nome</label>
+                                  <label class="control-label" for="nomealuno">Nome</label>
                                   <div class="controls">
                                     <input id="nomealuno" name="nomealuno" type="text" value="<?php  echo isset($aluno)?$aluno[0]->nomealuno:""; ?>"  autocomplete="off" />
 
@@ -47,7 +47,7 @@
 
                                  <!-- Text input-->
                                 <div class="control-group">
-                                  <label class="control-label" for="email">Email</label>
+                                  <label class="control-label" for="emailaluno">Email</label>
                                   <div class="controls">
                                     <input id="emailaluno" name="emailaluno" type="text" value="<?php echo isset($aluno)?$aluno[0]->emailaluno:""; ?>" autocomplete="off" />
 
@@ -56,7 +56,7 @@
 
 
                                 <div class="control-group">
-                                  <label class="control-label" for="email">Matricula</label>
+                                  <label class="control-label" for="matricula">Matricula</label>
                                   <div class="controls">
                                     <input id="matricula" name="matricula" type="text" value="<?php echo isset($aluno)?$aluno[0]->matricula:""; ?>" autocomplete="off" />
 
@@ -64,7 +64,7 @@
                                 </div>
 
                                 <div class="control-group">
-                                  <label class="control-label" for="email">Endereco</label>
+                                  <label class="control-label" for="endereco">Endereco</label>
                                   <div class="controls">
                                     <input id="endereco" name="endereco" type="text" value="<?php echo isset($aluno)?$aluno[0]->endereco:""; ?>" autocomplete="off" />
 
@@ -73,7 +73,7 @@
 
 
                                 <div class="control-group">
-                                  <label class="control-label" for="email">Turma</label>
+                                  <label class="control-label" for="turma">Turma</label>
                                   <div class="controls">
                                     <input id="turma" name="turma" type="text" value="<?php echo isset($aluno)?$aluno[0]->turma:""; ?>" autocomplete="off" />
 
