@@ -25,13 +25,16 @@ public function novo_user(){
       'senha' =>$this->input->post('senha'),
       'status'=>$this->input->post('status'),
         );
-        print_r($user);
-
-        $email_check=$this->user_model->email_check($user['email']);
+      $email_check=$this->user_model->email_check($user['email']);
 
   if($email_check){
     $this->user_model->register_user($user);
      redirect('user/user_profile');
+  }
+else{
+
+  $this->session->set_flashdata('error_msg', 'Ocorreu um erro, tente novamente.');
+  redirect('user');
   }
 }
 
