@@ -56,6 +56,7 @@
                  <?php echo $linha->turma; ?>
             </td>
 
+            
             <td class="col-md-1">
               <a class="btn btn-danger" href="<?php echo base_url('aluno/excluirAluno/').$linha->idaluno; ?>" role="button">Excluir</a>
             </td>

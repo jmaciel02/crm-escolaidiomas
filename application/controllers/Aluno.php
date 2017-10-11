@@ -26,6 +26,7 @@ public function novo_aluno(){
       'matricula'     =>$this->input->post('matricula'),
       'endereco'      =>$this->input->post('endereco'),
       'turma'         =>$this->input->post('turma'),
+      'notas'         =>$this->input->post('notas')
         );
 
       $email_check=$this->aluno_model->email_check($aluno['emailaluno']);
@@ -51,6 +52,7 @@ public function update_aluno(){
       'matricula'     =>$this->input->post('matricula'),
       'endereco'      =>$this->input->post('endereco'),
       'turma'         =>$this->input->post('turma'),
+      'notas'         =>$this->input->post('notas')
         );
 
 
