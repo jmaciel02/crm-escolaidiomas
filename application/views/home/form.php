@@ -25,7 +25,7 @@
                     <div class="col-sm-5" id="featured">
                       <div class="page-header text-muted">Usuario: <?php  echo $this->session->userdata('user_name');  ?></div>
 
-                        <form class="form-horizontal" action="<?php echo base_url('".$destino."'); method="post">
+                        <form class="form-horizontal" action="<?php echo base_url($destino); ?>" method="post">
                           <fieldset>
 
                             <!-- Form Name -->
