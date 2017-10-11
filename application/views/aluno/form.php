@@ -35,16 +35,16 @@
 
                                 <!-- Text input-->
                                 <div class="control-group">
-                                  <label class="control-label" for="nome">Nome aluno</label>
+                                  <label class="control-label" for="nome">Nome</label>
                                   <div class="controls">
-                                    <input id="nome" name="nome" type="text" value="<?php  echo isset($aluno)?$aluno[0]->nome:""; ?>"  autocomplete="off" />
+                                    <input id="nome" name="nome" type="text" value="<?php  echo isset($aluno)?$aluno[0]->nomealuno:""; ?>"  autocomplete="off" />
 
                                   </div>
                                 </div>
 
                                 <!-- Text input-->
                                 <div class="control-group">
-                                  <label class="control-label" for="senha">Senha aluno</label>
+                                  <label class="control-label" for="senha">Senha</label>
                                   <div class="controls">
                                     <input id="senha" name="senha" type="password" value="<?php echo isset($aluno)?$aluno[0]->senha:""; ?>" autocomplete="off">
 
@@ -56,16 +56,42 @@
                                 <div class="control-group">
                                   <label class="control-label" for="email">Email</label>
                                   <div class="controls">
-                                    <input id="email" name="email" type="text" value="<?php echo isset($aluno)?$aluno[0]->email:""; ?>" autocomplete="off" />
+                                    <input id="email" name="email" type="text" value="<?php echo isset($aluno)?$aluno[0]->emailaluno:""; ?>" autocomplete="off" />
 
                                   </div>
                                 </div>
 
 
                                 <div class="control-group">
-                                  <label class="control-label" for="email">Status</label>
+                                  <label class="control-label" for="email">Matricula</label>
                                   <div class="controls">
-                                    <input id="status" name="status" type="text" value="<?php echo isset($aluno)?$aluno[0]->status:""; ?>" autocomplete="off" />
+                                    <input id="matricula" name="matricula" type="text" value="<?php echo isset($aluno)?$aluno[0]->matricula:""; ?>" autocomplete="off" />
+
+                                  </div>
+                                </div>
+
+                                <div class="control-group">
+                                  <label class="control-label" for="email">Endereco</label>
+                                  <div class="controls">
+                                    <input id="endereco" name="endereco" type="text" value="<?php echo isset($aluno)?$aluno[0]->endereco:""; ?>" autocomplete="off" />
+
+                                  </div>
+                                </div>
+
+
+                                <div class="control-group">
+                                  <label class="control-label" for="email">Turma</label>
+                                  <div class="controls">
+                                    <input id="turma" name="turma" type="text" value="<?php echo isset($aluno)?$aluno[0]->turma:""; ?>" autocomplete="off" />
+
+                                  </div>
+                                </div>
+
+
+                                <div class="control-group">
+                                  <label class="control-label" for="email">Nota</label>
+                                  <div class="controls">
+                                    <input id="nota" name="nota" type="text" value="<?php echo isset($aluno)?$aluno[0]->nota:""; ?>" autocomplete="off" />
 
                                   </div>
                                 </div>
