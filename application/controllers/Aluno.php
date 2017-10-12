@@ -52,7 +52,8 @@ public function update_aluno(){
       'matricula'     =>$this->input->post('matricula'),
       'endereco'      =>$this->input->post('endereco'),
       'turma'         =>$this->input->post('turma'),
-      'notas'         =>$this->input->post('notas')
+      'notas'         =>$this->input->post('notas'),
+      'pagamento'     =>$this->input->post('pagamento')
         );
 
 
@@ -111,10 +112,8 @@ function aluno_profile(){
 public function alterarAluno($id){
 
 
-  $usuario['aluno']= $this->aluno_model->buscarAluno($id);
-
-
-  $this->load->view('aluno/home', $usuario);
+  $aluno['aluno']= $this->aluno_model->buscarAluno($id);
+  $this->load->view('aluno/home', $aluno);
 
 
 
@@ -143,6 +142,8 @@ public function aluno_logout(){
 public function cobranca(){
   # listar alunos inadiplementes
 
+ $aluno['aluno']= $this->aluno_model->ListarAlunosInadiplentes();
+ $this->load->view('aluno/home', $aluno);
 
 }
 

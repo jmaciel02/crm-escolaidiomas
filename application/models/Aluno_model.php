@@ -72,6 +72,16 @@
 
     }
 
+
+    public function ListarAlunosInadiplentes(){
+        $this->db->select('*');
+        $this->db->from('aluno');
+        $this->db->where('pagamento','n');
+             
+        return $query->result();
+    }
+
+
 }
 
 ?>

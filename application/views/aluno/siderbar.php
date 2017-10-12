@@ -16,7 +16,7 @@
                     </li>
 
                     <li>
-                      <a href="<?php base_url('aluno/cobranças');?>">Cobranças</a>
+                      <a href="<?php base_url('aluno/cobranca');?>">Cobranças</a>
                     </li>
 
                     <li>
