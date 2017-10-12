@@ -77,7 +77,8 @@
         $this->db->select('*');
         $this->db->from('aluno');
         $this->db->where('pagamento','n');
-             
+        $query = $this->db->get();
+              
         return $query->result();
     }
 
