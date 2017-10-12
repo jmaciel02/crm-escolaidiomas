@@ -11,12 +11,12 @@
                       <a href="<?php echo site_url('user/user_profile');?>" >Usuarios</a>
                     </li>
 
-                    <li class="active">
-                      <a href="<?php base_url('aluno/listaAlunos');?>">Alunos</a>
+                     <li class="active">
+                      <a href="<?php echo base_url('aluno/aluno_profile');?>">Alunos</a>
                     </li>
 
                     <li>
-                      <a href="<?php base_url('aluno/cobranca');?>">Cobranças</a>
+                      <a href="<?php echo base_url('aluno/cobrancas');?>">Cobranças</a>
                     </li>
 
                     <li>
