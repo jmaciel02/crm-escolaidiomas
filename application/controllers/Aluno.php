@@ -139,7 +139,7 @@ public function aluno_logout(){
   redirect('aluno/login_view', 'refresh');
 }
 
-public function cobranca(){
+public function cobrancas(){
   # listar alunos inadiplementes
 
  $aluno['aluno']= $this->aluno_model->ListarAlunosInadiplentes();
