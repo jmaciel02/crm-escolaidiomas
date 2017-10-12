@@ -107,9 +107,7 @@
 
                                  <?php } ?>
 
-                                ?>
-
-
+                            
                             <!-- Button -->
                             <div class="control-group">
                               <label class="control-label" for=""></label>
