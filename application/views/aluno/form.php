@@ -93,7 +93,7 @@
                                 <?php 
 
                                   if(!empty($aluno[0])){
-                                }?>
+                                ?>
                                      <div class="control-group">
                                       <label class="control-label" for="pagamento">Pagamento:</label>
                                         <div class="controls">
