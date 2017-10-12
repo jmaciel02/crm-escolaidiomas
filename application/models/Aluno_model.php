@@ -76,9 +76,9 @@
     public function ListarAlunosInadiplentes(){
         $this->db->select('*');
         $this->db->from('aluno');
-        $this->db->where('pagamento','n');
+        $this->db->where('pagamento','N');
         $query = $this->db->get();
-              
+
         return $query->result();
     }
 
