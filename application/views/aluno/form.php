@@ -90,6 +90,26 @@
                                 </div>
 
 
+                                <?php 
+
+                                  if(!empty($aluno[0])){
+                                }?>
+                                     <div class="control-group">
+                                      <label class="control-label" for="pagamento">Pagamento:</label>
+                                        <div class="controls">
+                                         <select id="pagamento" name="pagamento">
+                                            <option>S</option> 
+                                            <option>N</option>
+                                         </select>
+
+                                        </div>
+                                    </div>
+
+                                 <?php } ?>
+
+                                ?>
+
+
                             <!-- Button -->
                             <div class="control-group">
                               <label class="control-label" for=""></label>
