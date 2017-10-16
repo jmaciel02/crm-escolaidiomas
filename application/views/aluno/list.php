@@ -16,6 +16,7 @@
             <th>Notas</th>
             <th>Turma</th>
             <th>Pagamento</th>
+            <th></th>
           </tr>
 
         <!- Litar Alunos -->
