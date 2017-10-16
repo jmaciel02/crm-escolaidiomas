@@ -11,7 +11,7 @@
                       <a href="<?php echo site_url('user/user_profile');?>" >Usuarios</a>
                     </li>
 
-                    <li class="active">
+                     <li class="active">
                       <a href="<?php echo base_url('aluno/aluno_profile');?>">Alunos</a>
                     </li>
 

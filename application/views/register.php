@@ -31,23 +31,17 @@
                       <form role="form" method="post" action="<?php echo base_url('user/register_user'); ?>">
                           <fieldset>
                               <div class="form-group">
-                                  <input class="form-control" placeholder="Name" name="user_name" type="text" autofocus>
+                                  <input class="form-control" placeholder="Name" name="nome" type="text" autofocus>
                               </div>
 
                               <div class="form-group">
-                                  <input class="form-control" placeholder="E-mail" name="user_email" type="email" autofocus>
+                                  <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
                               </div>
                               <div class="form-group">
-                                  <input class="form-control" placeholder="Password" name="user_password" type="password" value="">
+                                  <input class="form-control" placeholder="Password" name="senha" type="password" value="">
                               </div>
 
-                              <div class="form-group">
-                                  <input class="form-control" placeholder="Age" name="user_age" type="number" value="">
-                              </div>
-
-                              <div class="form-group">
-                                  <input class="form-control" placeholder="Mobile No" name="user_mobile" type="number" value="">
-                              </div>
+                                  <input name="status" type="hidden" value="0">
 
                               <input class="btn btn-lg btn-success btn-block" type="submit" value="Register" name="register" >
 

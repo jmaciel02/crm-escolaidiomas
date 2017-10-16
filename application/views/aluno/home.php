@@ -1,11 +1,11 @@
 <?php
   $user_id=$this->session->userdata('user_id');
 
-   $dados=$this->user_model->ListarUsuario();
+   $dados=$this->aluno_model->ListarAlunos();
 
 if(!$user_id){
 
-  redirect('user/login_view');
+  redirect('aluno/login_view');
 }
  
 
@@ -29,13 +29,7 @@ if(!$user_id){
 
 				include "siderbar.php";
 				include "form.php";
-<<<<<<< HEAD
-				
-        
-        //include "list.php";
-=======
         include "list.php";
->>>>>>> e453a3d116556ac9da4c86a878ee32a8e8a95771
 				include "rodape.php";
 
 			?>
