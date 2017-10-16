@@ -32,8 +32,8 @@ public function novo_aluno(){
       $email_check=$this->aluno_model->email_check($aluno['emailaluno']);
 
   if($email_check){
-    $this->aluno_model->register_aluno($aluno);
-     redirect('aluno/aluno_profile');
+      $this->aluno_model->register_aluno($aluno);
+      redirect('aluno/aluno_profile');
   }
 else{
 
@@ -55,7 +55,6 @@ public function update_aluno(){
       'notas'         =>$this->input->post('notas'),
       'pagamento'     =>$this->input->post('pagamento')
         );
-
 
 
     $this->aluno_model->updatealuno($aluno);
@@ -89,9 +88,9 @@ function login_aluno(){
 
       if($data)
       {
-        $this->session->set_alunodata('aluno_id',$data['idusuario']);
+        $this->session->set_alunodata('aluno_id',   $data['idusuario']);
         $this->session->set_alunodata('aluno_email',$data['email']);
-        $this->session->set_alunodata('aluno_name',$data['nome']);
+        $this->session->set_alunodata('aluno_name', $data['nome']);
        
         $this->load->view('aluno/home');
 
@@ -111,11 +110,8 @@ function aluno_profile(){
 // Alterar
 public function alterarAluno($id){
 
-
-  $aluno['aluno']= $this->aluno_model->buscarAluno($id);
+  $aluno['aluno'] = $this->aluno_model->buscarAluno($id);
   $this->load->view('aluno/home', $aluno);
-
-
 
 }
 
@@ -142,7 +138,7 @@ public function aluno_logout(){
 public function cobrancas(){
   # listar alunos inadiplementes
 
- $aluno['aluno']= $this->aluno_model->ListarAlunosInadiplentes();
+ $aluno['aluno']  = $this->aluno_model->ListarAlunosInadiplentes();
  $this->load->view('aluno/home', $aluno);
 
 }
