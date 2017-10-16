@@ -28,7 +28,7 @@ if(!$user_id){
 			<?php 
 
 				include "siderbar.php";
-				include "form.php";
+				//include "form.php";
         include "list.php";
 				include "rodape.php";
 

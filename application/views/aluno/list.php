@@ -15,6 +15,7 @@
             <th>Emails</th>
             <th>Notas</th>
             <th>Turma</th>
+            <th>Pagamento/th>
           </tr>
 
         <!- Litar Alunos -->
@@ -25,8 +26,8 @@
 
           $dados=$this->aluno_model->ListarAlunos();
           
-          //array_pop($dados);
-      
+          var_dump($dados);
+
           foreach ($dados as $linha) {
         
           
@@ -56,6 +57,9 @@
                  <?php echo $linha->turma; ?>
             </td>
 
+            <td class="col-md-1">
+                 <?php echo $linha->pagamento; ?>
+            </td>
             
             <td class="col-md-1">
               <a class="btn btn-danger" href="<?php echo base_url('aluno/excluirAluno/').$linha->idaluno; ?>" role="button">Excluir</a>
