@@ -21,10 +21,6 @@
         <!- Litar Alunos -->
 
         <?php
-
-          
-
-          $dados=$this->aluno_model->ListarAlunos();
           
           //var_dump($dados);
 
