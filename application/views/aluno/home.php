@@ -1,7 +1,7 @@
 <?php
     $user_id=$this->session->userdata('user_id');
 
-    if(!empty($telaCobranca)){
+    if(filter_has_var($telaCobranca)){
       echo "telaCobranca";
       echo $telaCobranca;
     }
