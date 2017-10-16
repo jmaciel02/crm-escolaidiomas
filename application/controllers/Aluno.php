@@ -139,8 +139,7 @@ public function cobrancas(){
   # listar alunos inadiplementes
 
  $aluno['dados']      = $this->aluno_model->ListarAlunosInadiplentes();
- $aluno['telacobra']  = '1';
- $this->load->view('aluno/home', $aluno);
+ $this->load->view('aluno/telacobranca', $aluno);
 
 }
 

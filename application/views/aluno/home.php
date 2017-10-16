@@ -27,8 +27,8 @@
 			<?php 
 
 				include "siderbar.php";   
-        include "form.php";
         include "list.php";
+        include "form.php";
 				include "rodape.php";
 
 			?>
