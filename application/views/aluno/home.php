@@ -30,7 +30,7 @@ if(!$user_id){
 				include "siderbar.php";
 
          if(isset($telacobranca) !='1'){
-          echo "TELA::: ".telacobranca;
+          echo "TELA::: ".$telacobranca;
           include "form.php";
         }
 
