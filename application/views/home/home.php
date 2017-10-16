@@ -28,14 +28,8 @@ if(!$user_id){
 			<?php 
 
 				include "siderbar.php";
-				include "form.php";
-<<<<<<< HEAD
-				
-        
-        //include "list.php";
-=======
+				include "form.php";			
         include "list.php";
->>>>>>> e453a3d116556ac9da4c86a878ee32a8e8a95771
 				include "rodape.php";
 
 			?>
