@@ -1,13 +1,6 @@
 <?php
     $user_id=$this->session->userdata('user_id');
 
-    if(filter_has_var($telaCobranca)){
-      echo "telaCobranca";
-      echo $telaCobranca;
-    }
-
-
-
     $dados=$this->aluno_model->ListarAlunos();
 
     if(!$user_id){
