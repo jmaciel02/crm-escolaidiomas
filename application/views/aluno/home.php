@@ -26,11 +26,13 @@ if(!$user_id){
         <div class="row">
 
 			<?php 
-        if(isset($telacobranca) !='1'){
-          include "form.php";
-        }
 
 				include "siderbar.php";
+
+         if(isset($telacobranca) !='1'){
+          include "form.php";
+        }
+        
         include "list.php";
 				include "rodape.php";
 
