@@ -26,7 +26,7 @@
 
           $dados=$this->aluno_model->ListarAlunos();
           
-          var_dump($dados);
+          //var_dump($dados);
 
           foreach ($dados as $linha) {
         
