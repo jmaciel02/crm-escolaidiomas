@@ -29,8 +29,8 @@ if(!$user_id){
 
 				include "siderbar.php";
 
-         if(isset($telacobranca) !='1'){
-           
+         if(!empty($telacobranca)){
+
           include "form.php";
         }
 
