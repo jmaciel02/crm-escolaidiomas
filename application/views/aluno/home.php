@@ -1,12 +1,18 @@
 <?php
-  $user_id=$this->session->userdata('user_id');
+    $user_id=$this->session->userdata('user_id');
 
-   $dados=$this->aluno_model->ListarAlunos();
+    if(empty($telaCobranca)){
+      echo "telaCobranca";
+      exit;
+    }
 
-if(!$user_id){
 
-  redirect('aluno/login_view');
-}
+
+    $dados=$this->aluno_model->ListarAlunos();
+
+    if(!$user_id){
+      redirect('aluno/login_view');
+    }
  
 
  ?>
@@ -27,13 +33,8 @@ if(!$user_id){
 
 			<?php 
 
-				include "siderbar.php";
-
-         if(!empty($telacobranca)){
-             echo $telacobranca;
-              include "form.php";
-        }
-
+				include "siderbar.php";   
+        include "form.php";
         include "list.php";
 				include "rodape.php";
 
