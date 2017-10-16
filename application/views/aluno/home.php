@@ -26,9 +26,11 @@ if(!$user_id){
         <div class="row">
 
 			<?php 
+        if($telacobra !='1'){
+          include "form.php";
+        }
 
 				include "siderbar.php";
-				include "form.php";
         include "list.php";
 				include "rodape.php";
 
