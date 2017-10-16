@@ -26,7 +26,7 @@ if(!$user_id){
         <div class="row">
 
 			<?php 
-        if($telacobra !='1'){
+        if($telacobranca !='1'){
           include "form.php";
         }
 
