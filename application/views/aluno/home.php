@@ -1,9 +1,9 @@
 <?php
     $user_id=$this->session->userdata('user_id');
 
-    if(empty($telaCobranca)){
+    if(!empty($telaCobranca)){
       echo "telaCobranca";
-      exit;
+      echo $telaCobranca;
     }
 
 
