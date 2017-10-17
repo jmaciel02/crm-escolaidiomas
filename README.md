@@ -53,3 +53,7 @@ https://trello.com/b/c5bHnL0C/crm-escola-de-idiomas<br/>
     </td>
   </tr>
 </table>
+
+# Metricas:
+
+[![Throughput Graph](https://graphs.waffle.io/alexjosesilva/appEscolaIdiomas/throughput.svg)](https://waffle.io/alexjosesilva/appEscolaIdiomas/metrics/throughput)
