@@ -6,6 +6,8 @@
 
 [![Build Status](https://scrutinizer-ci.com/g/alexjosesilva/appEscolaIdiomas/badges/build.png?b=master)](https://scrutinizer-ci.com/g/alexjosesilva/appEscolaIdiomas/build-status/master)
 
+[![Code Coverage](https://scrutinizer-ci.com/g/alexjosesilva/appEscolaIdiomas/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/alexjosesilva/appEscolaIdiomas/?branch=master)
+
 # CRM Escola Idiomas<br/>
 Aplicação PHP: CRM para gerenciar alunos em uma escola. A estrutura do sistema foi desenvolvida com Codeigniter 2.X com PHP 7, Mysl. Na parte Front-End foi implementado Bootstrap e Jquery e Html 4.X 
 
