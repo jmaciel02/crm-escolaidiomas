@@ -24,12 +24,18 @@
       <div class="box">
         <div class="row">
 
+
+
+           <div class="column col-sm-9" id="main">
+              <div class="padding">
+                <div class="full col-sm-9">
+
     			<?php 
 
     				include "siderbar.php";   
             //include "form.php";
             include "list.php";
-    				include "rodape.php";
+            include "rodape.php";
 
     			?>
 
