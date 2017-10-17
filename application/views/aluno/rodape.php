@@ -1,6 +1,6 @@
  <!-- Imprimir Relatorios -->
                           <hr>
-                            <a class="btn btn-info" href="<?php echo "imprimir_usuario.php?opcao=1"; ?>" role="button">Imprimir Relatorio Todos os Usuario</a>
+                            <a class="btn btn-info" href="<?php echo echo base_url('aluno/relatorio/').$linha->idaluno; ?>" role="button">Imprimir Relatorio Todos os Usuario</a>
                           <hr>
 
 
