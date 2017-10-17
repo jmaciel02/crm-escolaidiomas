@@ -19,6 +19,7 @@
             <th>Turma</th>
             <th>Pagamento</th>
             <th></th>
+            <th></th>
           </tr>
 
         <!- Litar Alunos -->
@@ -61,8 +62,13 @@
             </td>
             
             <td class="col-md-1">
+              <a class="btn btn-danger" href="<?php echo base_url('aluno/gerarBoleto/').$linha->idaluno; ?>" role="button">GerarBoleto</a>
+            </td>
+
+            <td class="col-md-1">
               <a class="btn btn-danger" href="<?php echo base_url('aluno/excluirAluno/').$linha->idaluno; ?>" role="button">Excluir</a>
             </td>
+
             </tr>
 
           <?php 
