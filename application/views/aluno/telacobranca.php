@@ -39,6 +39,10 @@
 
     			?>
 
+                </div>
+              </div>
+            </div>
+
         </div><!-- row -->
       </div><!-- box -->
   </div><!-- wrapper-->
