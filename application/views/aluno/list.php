@@ -3,7 +3,7 @@
 
        <div class="col-sm-12" id="stories">
         <div class="page-header text-muted divider">
-          Alunos Matriculados
+          Alunos em Debito
         </div>
        </div>
 
