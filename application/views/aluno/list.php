@@ -7,6 +7,8 @@
         </div>
        </div>
 
+       <div>
+
         <table class="table table-hover">
           <tr>
             <th></th>
@@ -69,3 +71,5 @@
           ?>
 
         </table>
+
+      </div>

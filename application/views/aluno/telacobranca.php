@@ -1,8 +1,6 @@
 <?php
     $user_id=$this->session->userdata('user_id');
 
-    echo "teste: ".$telacobranca[1];
-
     $dados=$this->aluno_model->ListarAlunosInadiplentes();
 
     if(!$user_id){
