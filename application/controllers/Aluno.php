@@ -138,7 +138,7 @@ public function aluno_logout(){
 public function cobrancas(){
   # listar alunos inadiplementes
 
- $aluno['dados']      = $this->aluno_model->ListarAlunosInadiplentes();
+ $aluno['dados'] = $this->aluno_model->ListarAlunosInadiplentes();
  $this->load->view('aluno/telacobranca', $aluno);
 
 }

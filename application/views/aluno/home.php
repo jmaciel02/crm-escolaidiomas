@@ -24,19 +24,19 @@
       <div class="box">
         <div class="row">
 
-			<?php 
+    			<?php 
 
-				include "siderbar.php";   
-        include "list.php";
-        include "form.php";
-				include "rodape.php";
+    				include "siderbar.php";   
+            include "form.php";
+            include "list.php";
+    				include "rodape.php";
 
-			?>
+    			?>
 
 
         </div><!-- row -->
       </div><!-- box -->
-    </div><!-- wrapper-->
+  </div><!-- wrapper-->
 
 
     <!-- script references -->
