@@ -1,8 +1,6 @@
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/alexjosesilva/appEscolaIdiomas.svg?columns=all)](http://waffle.io/alexjosesilva/appEscolaIdiomas)  [![Build Status](https://travis-ci.org/alexjosesilva/appEscolaIdiomas.svg?branch=master)](https://travis-ci.org/alexjosesilva/appEscolaIdiomas)
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/alexjosesilva/appEscolaIdiomas/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/alexjosesilva/appEscolaIdiomas/?branch=master)
-
-[![Build Status](https://scrutinizer-ci.com/g/alexjosesilva/appEscolaIdiomas/badges/build.png?b=master)](https://scrutinizer-ci.com/g/alexjosesilva/appEscolaIdiomas/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/alexjosesilva/appEscolaIdiomas/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/alexjosesilva/appEscolaIdiomas/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/alexjosesilva/appEscolaIdiomas/badges/build.png?b=master)](https://scrutinizer-ci.com/g/alexjosesilva/appEscolaIdiomas/build-status/master)
 
 [![Code Coverage](https://scrutinizer-ci.com/g/alexjosesilva/appEscolaIdiomas/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/alexjosesilva/appEscolaIdiomas/?branch=master)
 
