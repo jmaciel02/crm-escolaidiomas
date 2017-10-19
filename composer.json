@@ -2,6 +2,7 @@
     "name": "alexjosesilva/CRM-EscolaIdiomas",
     "description": "Aplicação PHP: CRM para gerenciar alunos em uma escola. A estrutura do sistema foi desenvolvida com Codeigniter 2.0.",
     "keywords": ["framework", "codeigniter"],
+    "homepage": "https://github.com/alexjosesilva/CRM-EscolaIdiomas",
     "license": "MIT",
     "type": "project",
     "require": {
